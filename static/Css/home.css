@@ -1,0 +1,416 @@
+
+/* Color Scheme  */
+/* Green Light: #77a721 */
+/* Background: #dbfdde */
+/* Font: #26360a */
+
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #163519;
+  }
+
+a,li,button{
+  text-decoration: none;
+  font-size: 15px;
+  }
+
+body{
+  /* background-color: #ecfeed; */
+  background-color: #daf3cd;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  }
+
+  .Background{
+    height: 110vh;
+    width: 100%;
+  }
+  .One,.Three{
+    /* Greyish color #e5e6e1 */
+    /* Greenish color #daf3cd */
+    background-color: white;
+  }
+  .One{
+    height: 120vh;
+    display: flex;
+  }
+  .Two,.Four{
+    background-color: #eeedec;
+  }
+
+  /* Top Bar  */
+#top{
+  height: 6vh;
+  background-color: #77a721;
+  padding: 0px 1vw;
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  }
+#top>p{
+  color: white;
+  }
+#top>div>img{
+  height: 4vh;
+  padding: 0 0.5vw;
+  }
+.topBtn{
+  padding: 0px 1vh;
+  align-items: center;
+  border-radius: 0px;
+  border: 1px solid black;
+  color: white;
+}
+.topBtn:hover{
+  background-color: black;
+}
+  /* Header  */
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  padding-bottom: 0px;
+  background-color: white;
+  }
+
+  /* Logo  */
+  
+.Krishi{
+  font-family: 'Amita', cursive;
+  font-size:5vh;
+  position: absolute;
+  top: 6vh;
+  left: 2vw;
+}
+.Unnati{
+  font-family: 'Amita', cursive;
+  font-size:4vh;
+  margin-top: 4vh;
+  margin-left: 2vw;
+}
+
+.navitems{
+  list-style: none;    
+  }
+.navitems li{
+  display: inline-block;
+  }
+.navitems li a{
+  transition: all 0.3s ease 0s;
+  color: #26360a;
+  padding: 2vh 1.5vw;
+  border-radius: 5px;
+  }
+  
+.navitems li a:hover {
+  color:white;
+  background-color: #26360a;
+  transition: all 0.3s ease 0s;
+}
+
+  .arrow:hover {
+    border: solid white;
+    border-width: 3px 0 0 3px ;
+    margin-bottom: 0;
+    margin-top: 2px ;
+  }
+  
+  .arrow {
+    border: solid #26360a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+
+button{
+    padding:9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #77a721; 
+  }
+
+button:hover{
+    background-color:#a5d154 ;
+  }
+
+  /*Main Image Text  */
+.MainText{
+    position: absolute;
+    top: 50%;
+    margin-left: 5vw;
+    /* left:10%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+
+
+
+/* Back To Top Button  */
+.BackToTop{
+  width: 4vw; 
+}
+#TopBtn{
+  display: none;
+  z-index: 99;
+  position: fixed;
+  right: 0.5vw;
+  bottom: 2vh;
+  background-color: transparent;
+  padding: 0px;
+}
+#TopBtn:hover{
+  background-color: transparent;
+}
+
+
+
+  /* Card  */
+.cardList{
+      position: absolute;
+      top:110vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+  }
+.Card{
+    position: relative;
+    height: auto; 
+    width: auto;
+    background-color: #dbfdde;
+    border-radius: 20px;
+    margin: 0 2vw;
+    padding: 1vw;
+
+    /* box-shadow: inset 0px 0px 40px 1px green; */
+    }
+    .Card>div{
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+    }
+    .Card>div>p{
+    padding:1vh 1vw;
+    font-size: 3vh;
+  }
+
+  .CardImg{
+    width: 22vh;
+    height: 22vh;
+  }
+
+.OneImage{
+  height: 80vh;
+  margin: 5vh 2vw;
+  margin-top: 30vh;
+  position: relative;
+  float: inline-start;
+}
+
+.OneHeading{
+  position: relative;
+  float:left;
+  margin-top: 40vh;
+  margin-left: 15vw;
+  font-size: 4vw;
+}
+.OneSub{
+  font-size: 2vw;
+  margin-top: 60vh;
+  margin-left: 15vw;
+}
+
+.OneBtn{
+  height: 10vh;
+  width: 20vw;
+  border-radius: 10px;
+  font-size: 2vw;
+  position: relative;
+  margin-top: 10vh;
+  margin-left: 25vw;
+}
+
+.TwoHead{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 4vw;
+  padding: 5vh 0 5vh 0;
+}
+.MapBtn{
+  height: 10vh;
+  width: 20vw;
+  border-radius: 10px;
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 90vh;
+  margin-left: 5vw;
+  background-color: #163519;
+  color: white;
+}
+.SecMap{
+
+  height: 110vh;
+  padding-top: 5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Three{
+  padding: 5vh 4vw;
+}
+
+.Forum ,.Chat{
+  height: 45%;
+  /* background-color: #77a721; */
+}
+.inbtHeading{
+  border-bottom: 10px solid #26360a;
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  font-family: 'IM Fell English', serif;
+  font-weight: bold;
+  font-size: 5vh;
+}
+  
+.inbtHeading:hover{
+  border-bottom: 10px double #26360a;
+}
+.Forum{
+  margin-top: 10vh;
+}
+
+.Four{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ column-gap: 1vw;
+ place-items: center;
+}
+.GovtScheme, .PlantInfo{
+  display: flex;
+  justify-content: center;
+  /* background-color: #77a721; */
+  color: white;
+  width: 70%;
+  height: 90%;
+}
+.Cropimg{
+  height: 60%;
+  opacity: 0.7;
+  transition: ease-out 1s   ;
+}
+.Cropimg:hover{
+  opacity: 1;
+}
+.PlantInfo>p,.GovtScheme>p{
+  position: absolute;
+  margin-top: 10vh;
+  z-index: 99;
+  color: white;
+  font-size: 5vh ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FOOTER  */
+ footer{
+    background-color: #282828;
+    padding:7vh 0 20px 0;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  .MainFooter{
+  height: 40vh;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  column-gap: 5vw;
+}
+  
+.BottomKrishi{
+  color: white;
+  font-family: 'Amita', cursive;
+  font-size:5vh;
+  /* position: absolute; */
+  top: 6vh;
+  left: 2vw; 
+  text-align: center;
+}
+.BottomUnnati{
+  color:white;
+  font-family: 'Amita', cursive;
+  font-size:4vh;
+  margin-top: 7vh;
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.MainFooter>ul>li ,.FootCol2>li{
+  margin: 1vh;
+  color: white; 
+  list-style-type: none;
+}
+.FootHead{
+  font-size: 3vh;
+}
+.bottomFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:20px;
+}
+
+.bottomFooter p{
+  color: black;
+}
+hr{  
+  border: solid #EAF6F6 2px;
+  border-bottom: none;
+  width: 90%;
+  float: bottom;
+  margin:auto;
+}
+
