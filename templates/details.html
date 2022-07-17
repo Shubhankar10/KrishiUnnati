@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+  </head>
+  <body>
+    <div class="center">
+<!-- details form -->
+      <h1>Account Details</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Full Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Mobile Number</label>
+        </div>
+       
+        <div class="txt_field">
+          <p>Gender
+          <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            
+           </select></p><br>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Address</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Country</label>
+        </div>
+        <input type="submit" value="Sign Up as Customer"><br><br>
+        <input type="submit" value="Sign up as Seller">
+        
+        <div class="signup_link">
+          Already a member? <a href="/login" target="_self">Log In</a>
+        </div>
+       
+      </form>
+    </div>
+
+  </body>
+</html>
