@@ -20,4 +20,5 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
+    path('',include('imgupload.urls')),
 ]

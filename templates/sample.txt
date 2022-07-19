@@ -1,0 +1,259 @@
+id 322835241
+
+plant_name Epipremnum aureum
+
+common_names ['golden pothos', 'Ceylon creeper', "hunter's robe", 'ivy arum', 'house plant', 'money plant', 'silver vine', 'Solomon Islands ivy', 'marble queen', 'taro vine', "devil's vine", "devil's ivy"]
+
+edible_parts None
+
+propagation_methods None
+
+synonyms ['Epipremnum mooreense', 'Pothos aureus', 'Rhaphidophora aurea', 'Scindapsus aureus']
+
+class Magnoliopsida
+
+family Araceae
+
+genus Epipremnum
+
+kingdom Plantae
+
+order Alismatales
+
+phylum Magnoliophyta
+
+url https://en.wikipedia.org/wiki/Epipremnum_aureum
+
+value Epipremnum aureum is a species of flowering plant in the arum family Araceae, native to Mo'orea in the Society Islands of French Polynesia. The species is a popular houseplant in temperate regions, but has also become naturalised in tropical and sub-tropical forests worldwide, including northern Australia, Southeast Asia, South Asia, the Pacific Islands and the West Indies, where it has caused severe ecological damage in some cases.
+The plant has a multitude of common names including golden pothos, Ceylon creeper, hunter's robe, ivy arum, house plant, money plant, silver vine, Solomon Islands ivy, marble queen, and taro vine. It is also called devil's vine or devil's ivy because it is almost impossible to kill and it stays green even when kept in the dark. It is sometimes mistakenly labeled as a Philodendron in plant stores. It is commonly known as money plant in many parts of the Indian subcontinent. It rarely flowers without artificial hormone supplements; the last known spontaneous flowering was reported in 1964. Nevertheless, in February 2021, a naturally occurring cluster of four flowers was discovered in a tree canopy on an old vine in a South Florida wooded area.
+The plant has gained the Royal Horticultural Society's Award of Garden Merit.
+
+citation https://en.wikipedia.org/wiki/Epipremnum_aureum
+
+license_name CC BY-SA 3.0
+
+license_url https://creativecommons.org/licenses/by-sa/3.0/
+
+value https://plant-id.ams3.cdn.digitaloceanspaces.com/plant_id_knowledge_base/401/24b6396a64bf855b2ee2875118b0b.jpg
+
+citation Joydeep
+
+license_name CC BY-SA 3.0
+
+license_url https://creativecommons.org/licenses/by-sa/3.0/
+
+language en
+
+scientific_name Epipremnum aureum
+
+genus epipremnum
+
+species aureum
+
+probability 0.9770310635763929
+
+confirmed False
+
+similar_images [{'id': '6c0e81367f27f09833559e3d35721fe8', 'similarity': 14.24612778103989, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/6c0/e81367f27f09833559e3d35721fe8.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/6c0/e81367f27f09833559e3d35721fe8.small.jpg'}, {'id': 'c64a00e5eb1fa8bafb171d214d899b03', 'similarity': 12.699780721948738, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c64/a00e5eb1fa8bafb171d214d899b03.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c64/a00e5eb1fa8bafb171d214d899b03.small.jpg'}]
+
+entity_id 456
+
+name abiotic
+
+probability 0.159076735608
+
+similar_images [{'id': '18d43174593c4b3eb5f106fa55dc21df', 'similarity': 5.1408036067668075, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/18d/43174593c4b3eb5f106fa55dc21df.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/18d/43174593c4b3eb5f106fa55dc21df.small.jpg'}, {'id': '4f4c9f23e5e844bca0bca33b106df1fe', 'similarity': 4.850127953463128, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/4f4/c9f23e5e844bca0bca33b106df1fe.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/4f4/c9f23e5e844bca0bca33b106df1fe.small.jpg'}]
+
+common_names ['abiotic disorder', 'physiological plant disorder']
+
+url https://en.wikipedia.org/wiki/Physiological_plant_disorder
+
+description Abiotic disorders are caused by non-living factors - usually by unsuitable environmental conditions, such as drought stress, nutrient deficiency, improper watering, or planting conditions.
+
+local_name abiotic
+
+language en
+
+entity_id 941
+
+name water-related issue
+
+probability 0.10258604716620001
+
+similar_images [{'id': '71a0d895328e451a872bf330966a68a8', 'similarity': 3.6111973314155743, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/71a/0d895328e451a872bf330966a68a8.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/71a/0d895328e451a872bf330966a68a8.small.jpg'}, {'id': '0a006fc5499c4f97be23be94fb686a41', 'similarity': 3.17474471904861, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/0a0/06fc5499c4f97be23be94fb686a41.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/0a0/06fc5499c4f97be23be94fb686a41.small.jpg'}]
+
+common_names None
+
+url https://en.wikipedia.org/wiki/Houseplant_care#Water_requirement
+
+description Water-related abiotic issues refer to abiotic stresses caused by inadequate watering, including water excess, uneven watering, and water deficiency.
+
+local_name water-related issue
+
+language en
+
+entity_id 899
+
+name water excess or uneven watering
+
+probability 0.0658452083528
+
+similar_images [{'id': '56c2d385e14f48a6aff5e091c506bc25', 'similarity': 4.950156580577254, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/56c/2d385e14f48a6aff5e091c506bc25.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/56c/2d385e14f48a6aff5e091c506bc25.small.jpg'}, {'id': '6bc8144cc00d46e49510fba143c1353c', 'similarity': 4.876335675620973, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/6bc/8144cc00d46e49510fba143c1353c.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/6bc/8144cc00d46e49510fba143c1353c.small.jpg'}]
+
+common_names ['overwatering']
+
+url https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/overwatering.aspx
+
+description Water excess and uneven watering are abiotic disorders caused by inadequate watering. Water excess may lead to rotting of the roots due to lack of oxygen, and higher susceptibility to infection. Symptoms of over-watering include stunted growth, yellow and brown leaves, wilting and higher susceptibility to leaf burn.
+
+local_name water excess or uneven watering
+
+language en
+
+entity_id 1082
+
+name senescence
+
+probability 0.024164624386799997
+
+similar_images [{'id': 'e2cacaae715d44fbb17583f1be983257', 'similarity': 6.386816130825519, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/e2c/acaae715d44fbb17583f1be983257.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/e2c/acaae715d44fbb17583f1be983257.small.jpg'}, {'id': 'd63120666f3e4b1ea5cebf1bafbf9da0', 'similarity': 5.126091288094159, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d63/120666f3e4b1ea5cebf1bafbf9da0.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d63/120666f3e4b1ea5cebf1bafbf9da0.small.jpg'}]
+
+common_names ['aging']
+
+url https://en.wikipedia.org/wiki/Plant_senescence
+
+description Senescence is a process of aging that can occur due to physiological aging or environmental stress.
+
+local_name senescence
+
+language en
+
+entity_id 943
+
+name nutrient-related issue
+
+probability 0.019446456818
+
+redundant True
+
+similar_images [{'id': 'f628ad0465234296b0512297593907a2', 'similarity': 4.532020960653475, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/f62/8ad0465234296b0512297593907a2.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/f62/8ad0465234296b0512297593907a2.small.jpg'}, {'id': '9927567af7424129aba947e6211e078c', 'similarity': 4.48328007424808, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/992/7567af7424129aba947e6211e078c.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/992/7567af7424129aba947e6211e078c.small.jpg'}]
+
+common_names ['nutritional disease']
+
+url https://en.wikipedia.org/wiki/Plant_nutrition
+
+description Nutrient-related abiotic disorders are caused by deficiency or toxicity of macronutrients and micronutrients essential for the plant. This can be caused by a suboptimal amount of nutrients in the soil or unsuitable conditions for nutrients uptake.
+
+local_name nutrient-related issue
+
+language en
+
+entity_id 907
+
+name water deficiency
+
+probability 0.01937985917754
+
+similar_images [{'id': 'ffd99819656f421baae37b88a09d6e77', 'similarity': 4.197906713838381, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ffd/99819656f421baae37b88a09d6e77.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ffd/99819656f421baae37b88a09d6e77.small.jpg'}, {'id': '8eaf2aa86ad44a9fb367055360195c11', 'similarity': 4.135554110971346, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/8ea/f2aa86ad44a9fb367055360195c11.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/8ea/f2aa86ad44a9fb367055360195c11.small.jpg'}]
+
+common_names ['drought']
+
+url https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/drought.aspx
+
+description Water deficiency is similar in its symptoms to over-watering and it is important to identify the cause. Symptoms include slow growth, wilting, discolored leaves and flowers, burning on edges of leaves. The affected plant can also suffer from disrupted nutrient uptake.
+
+local_name water deficiency
+
+language en
+
+entity_id 801
+
+name nutrient deficiency
+
+probability 0.018209096839799998
+
+similar_images [{'id': 'ad41e0ec0969403a980e6bbd71978bcb', 'similarity': 3.549493726436129, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ad4/1e0ec0969403a980e6bbd71978bcb.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ad4/1e0ec0969403a980e6bbd71978bcb.small.jpg'}, {'id': '1eb77bb441144112b9fd2bff7401811b', 'similarity': 3.235748774219519, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/1eb/77bb441144112b9fd2bff7401811b.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/1eb/77bb441144112b9fd2bff7401811b.small.jpg'}]
+
+common_names None
+
+url https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/nutrients.aspx
+
+description Nutrient deficiency is caused by a lack of macronutrients or micronutrients essential for the plant. This can be caused by insufficient amounts of nutrients in the soil or unsuitable conditions for nutrients uptake.
+
+local_name nutrient deficiency
+
+language en
+
+entity_id 942
+
+name light-related issue
+
+probability 0.0047121663208
+
+redundant True
+
+similar_images [{'id': '2fd2fd3b78f84b89af8e3127dc9a8294', 'similarity': 5.536264613228077, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/2fd/2fd3b78f84b89af8e3127dc9a8294.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/2fd/2fd3b78f84b89af8e3127dc9a8294.small.jpg'}, {'id': 'd3496defcd2749128962771b1aab3d64', 'similarity': 5.332380541832983, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d34/96defcd2749128962771b1aab3d64.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d34/96defcd2749128962771b1aab3d64.small.jpg'}]
+
+common_names None
+
+url https://en.wikipedia.org/wiki/Grow_light#Light_requirements_of_plants
+
+description A light-related issue is an abiotic disorder that can be caused by inadequate light intensity or quality. Various plant species differ in light requirements in terms of intensity and type of light (e.g. direct or indirect light).
+
+local_name light-related issue
+
+language en
+
+entity_id 900
+
+name light or heat source damage
+
+probability 0.0017102309854200002
+
+similar_images [{'id': 'd1d9d563d9df45c38fb547fc08125e41', 'similarity': 7.58323557892364, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d1d/9d563d9df45c38fb547fc08125e41.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/d1d/9d563d9df45c38fb547fc08125e41.small.jpg'}, {'id': 'ae333ed02723401f8540a16aa297977e', 'similarity': 6.338180382100667, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ae3/33ed02723401f8540a16aa297977e.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/ae3/33ed02723401f8540a16aa297977e.small.jpg'}]
+
+common_names None
+
+url None
+
+description Exposition to a strong source of light or heat (such as a radiator, light bulb, fire) can be damaging to plants and lead to injuries, stunted growth, leaf drop, etc.
+
+local_name light or heat source damage
+
+language en
+
+entity_id 964
+
+name light excess
+
+probability 0.00115771663994
+
+similar_images [{'id': 'c4926c80fe0e4d96a11330fe7d7624ee', 'similarity': 3.7137520538423523, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c49/26c80fe0e4d96a11330fe7d7624ee.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c49/26c80fe0e4d96a11330fe7d7624ee.small.jpg'}, {'id': '14501169e2a4493990cfe4f1fa428797', 'similarity': 3.461470522087807, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/145/01169e2a4493990cfe4f1fa428797.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/145/01169e2a4493990cfe4f1fa428797.small.jpg'}]
+
+common_names None
+
+url None
+
+description Too much light can be harmful, especially to shade-loving plants. The excess light energy is converted to heat and can cause damage to the plant. The plant develops symptoms such as yellow or brown spots on the foliage, yellowing of the leaves, brown crispy leaf edges or tips, and wilting. In serious cases, excess light leads to sunburn or sunscald.
+
+local_name light excess
+
+language en
+
+entity_id 793
+
+name mechanical damage
+
+probability 0.001153267714534
+
+similar_images [{'id': 'cca8fc21e80743499abea62cf05046f2', 'similarity': 5.619506318050412, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/cca/8fc21e80743499abea62cf05046f2.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/cca/8fc21e80743499abea62cf05046f2.small.jpg'}, {'id': 'c6beca3c0b9a4f1d9d3e039db966c02d', 'similarity': 4.969553713667702, 'url': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c6b/eca3c0b9a4f1d9d3e039db966c02d.jpg', 'url_small': 'https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/images/c6b/eca3c0b9a4f1d9d3e039db966c02d.small.jpg'}]
+
+common_names ['mechanical injury']
+
+url https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/mechanical.aspx
+
+description Mechanical damage occurs when parts of the plant are disrupted by physical action, usually by tools or inappropriate handling. The damage can affect roots, root collar, stem, branches, or leaves.
+
+local_name mechanical damage
+
+language en

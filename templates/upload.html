@@ -1,0 +1,34 @@
+<html>
+    <head>
+        Upload herer
+    </head>
+    <body>
+        <p class="testimonials-description">
+                     
+            <h3>uplad plant here</h3>
+            
+              <form action="/imageprocess" method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <label for="img" class="lbp"><i class="fa fa-plus" style="font-size: 40px; border: 1px solid rgb(250,205,138); padding: 25px; margin: 10px 0px 10px 0px; cursor: pointer;" onchange="getImage(this.value);">
+                    
+                  </i></label>
+                  <input id='img' type="file" name="image"  style="display: none; visibility: none;"/>
+                  
+                 <br/>
+                  
+                  <input type="submit" value="submit" class="btn btn-default btn-main" /> 
+              
+              </form>
+              
+          </p>
+
+          <script type="text/javascript">
+            function getImage(imagename)
+            {
+          var newimg=imagename.replace(/^.*\\/,"");
+          $('#display-image').html(newimg);
+            }
+         </script>
+    </body>
+    
+</html>
