@@ -1,247 +1,252 @@
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlantProj</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'Css/home.css' %}">
-    
-
-    <!-- Font -->
-    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
-    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
-    <link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap' %}" rel="stylesheet">
-    <link href="{% static 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap' %}" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'Css/chat.css' %}">
-    
-<link href="{% static 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap' %}" rel="stylesheet">
-    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}">
-    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer' %}" />
-    <link href="{% static 'https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' %}" rel='stylesheet'>
-    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
-    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
-
-<link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
-<link href="{% static 'https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap' %}" rel="stylesheet">
-
-  </head>
-<body>
-<!-- TOP bar -->
-    <div id="top">
-      <p>India&nbsp;|&nbsp;support@gmail.com &nbsp;|&nbsp;+91</p>
-      <div style="display: flex;">
-        <button class="topBtn">Change Language</button>
-        <img src="{% static 'Images/Logos/FBPng.png' %}">
-        <img src="{% static 'Images/Logos/LinkedinPNG.png' %}">
-        <img src="{% static 'Images/Logos/GithubPNG.png' %}">
-      </div>
-    </div>
-<!-- NAV BAR  -->
-    <div class="head">
-      <!-- <img src="{% static 'Images/BG (1).jpg' %}" class="logo"> -->
-      <p class="Krishi">कृषि </p>
-      <p class="Unnati">Unnati</p>
-      <nav>
-        <div class="navitems" >
-          <ul> 
-            <li><a href="">Home</a> </li>
-            <li><a href="">About us</a> </li>
-            <li><a href="">Govt Schemes&nbsp;<i class="arrow"></i></a> </li>
-            <li><a href="">Plant Identification</a> </li>
-            <li><a href="/map">Map</a> </li>
-          </ul>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PlantProj</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'Css/home.css' %}">
+      
+  
+      <!-- Font -->
+      <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+      <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+      <link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap' %}" rel="stylesheet">
+      <link href="{% static 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap' %}" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'Css/chat.css' %}">
+      
+  <link href="{% static 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap' %}" rel="stylesheet">
+      <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}">
+      <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer' %}" />
+      <link href="{% static 'https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' %}" rel='stylesheet'>
+      <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+      <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+  
+  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+  <link href="{% static 'https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap' %}" rel="stylesheet">
+  
+    </head>
+  <body>
+  <!-- TOP bar -->
+      <div id="top">
+        <p>India&nbsp;|&nbsp;support@gmail.com &nbsp;|&nbsp;+91</p>
+        <div style="display: flex;">
+          <button class="topBtn">Change Language</button>
+          <img src="{% static 'Images/Logos/FBPng.png' %}">
+          <img src="{% static 'Images/Logos/LinkedinPNG.png' %}">
+          <img src="{% static 'Images/Logos/GithubPNG.png' %}">
         </div>
-      </nav>
-      <a href="/signup"><button>Login/Signup</button></a>
-    </div>
-    <!-- Back to top button  -->
-    <button id="TopBtn" onclick="goToTop()"><img src="{% static 'Images/Logos/BacktoTop.png' %}" class="BackToTop"></button>
-    
-    <img src="{% static 'Images/Leaf1.jpg' %}" style="width: 100%; height: 110vh;"> 
-    <p class="MainText">Farming is a profession <br>of hope.</p>
-    <!-- <button class="CenterBtn">HEllO</button> -->
-    
-    
-    <section>
-<!-- Cards -->
-      <div class="cardList">
-
-        <a href="#One">
-          <div class="Card">
-            <img src="{% static 'Images/Logos/ID.png' %}" class="CardImg">
-            <div>
-              <p>Identify</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="#Four">
-          <div class="Card">
-            <img src="{% static 'Images/Logos/Hand.png' %}" class="CardImg">
-            <div>
-              <p>Scheme</p>
-            </div>
-          </div>
-        </a>
-        
-        <a href="#Two">
-          <div class="Card">
-            <img src="{% static 'Images/Logos/India (2).png' %}" class="CardImg">
-            <div>
-              <p>Map</p>
-            </div>
-          </div>
-        </a>
-
-
-        <a href="#Three">
-          <div class="Card">
-            <img src="{% static 'Images/Logos/FAQ.png' %}" class="CardImg">
-            <div>
-              <p>Forum</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="#Three">
-          <div class="Card">
-            <img src="{% static 'Images/Logos/Msg2.png' %}" class="CardImg">
-            <div>
-              <p>Chat</p>
-            </div>
-          </div>
-        </a>
       </div>
-    </section>
-<div></div>
-    <section class="Background One" id="One">
-      <img src="{% static 'Images/Plant_img (8).jpg' %}" class="OneImage">
-     <div >
-       <p class="OneHeading"> Diagnose your crop </p>
-       <p class="OneSub">Click a photo to test if your crop is healty.</p>
-
-       <button class="OneBtn">Take a Photo</button>
-     </div>
-    </section>
-
-    <section class="Background Two" id="Two">
-      <a href="/map"><button class="MapBtn">Go To Map</button></a>
-      <img src="{% static 'Images/Map.png' %}" class="SecMap">
-      <!-- Side k liye text daalna hai  -->
-    </section>
-
-    <section class="Background Three" id="Three">
-      <div class="Chat">
-        <p class="inbtHeading">Chat</p>
+  <!-- NAV BAR  -->
+      <div class="head">
+        <!-- <img src="{% static 'Images/BG (1).jpg' %}" class="logo"> -->
+        <p class="Krishi">कृषि </p>
+        <p class="Unnati">Unnati</p>
+        <nav>
+          <div class="navitems" >
+            <ul> 
+              <li><a href="">Home</a> </li>
+              <li><a href="">About us</a> </li>
+              <li><a href="">Govt Schemes&nbsp;<i class="arrow"></i></a> </li>
+              <li><a href="">Plant Identification</a> </li>
+              <li><a href="/map">Map</a> </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="/signup"><button>Login/Signup</button></a>
       </div>
-      <div class="Forum">
-        <p class="inbtHeading">Forum</p>
-        <p>Connect to other Farmers</p>
-      </div>
-    </section>
-
-    <section class="Background Four" id="Four">
-      <div class="GovtScheme">
-        <p style="color:black">Government <br>Scheme</p>
-        <!-- <p>1. Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
-          2. Pradhan Mantri Fasal Bima Yojana (PMFBY)
-          3. National Mission For Sustainable Agriculture (NMSA)
-          4. Paramparagat Krishi Vikas Yojana (PKVY)
-          5. Kisan Credit Card (KCC)</p> -->
-        <img src="{% static 'Images/Plant_img (2).jpg' %}" class="Cropimg">
-      </div>
-      <div class="PlantInfo">
-        <p>Crop <br>Information</p>
-        <img src="{% static 'Images/Plant_img (9).jpg ' %}" class="Cropimg">
-      </div>
-    </section>
-
-<!--Chat Bot-->
-<div class="chat-bar-collapsible">
-  <button id="chat-button" type="button" class="collapsible">
-    <!-- Chat with us! -->
-      <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-  </button>
-
-  <div class="content">
-      <div class="full-chat-block">
-          <!-- Message Container -->
-          <div class="outer-container">
-              <div class="chat-container">
-                  <!-- Messages -->
-                  <div id="chatbox">
-                      <h5 id="chat-timestamp"></h5>
-                      <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                  </div>
-
-                  <!-- User input box -->
-                  <div class="chat-bar-input-block">
-                      <div id="userInput">
-                          <input id="textInput" class="input-box" type="text" name="msg"
-                              placeholder="Tap 'Enter' to send a message">
-                          <p></p>
-                      </div>
-
-                      <div class="chat-bar-icons">
-                          <!-- <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i> -->
-                          <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                              onclick="sendButton()"></i>
-                      </div>
-                  </div>
-
-                  <div id="chat-bar-bottom">
-                      <p></p>
-                  </div>
-
+      <!-- Back to top button  -->
+      <button id="TopBtn" onclick="goToTop()"><img src="{% static 'Images/Logos/BacktoTop.png' %}" class="BackToTop"></button>
+      
+      <img src="{% static 'Images/Leaf1.jpg' %}" style="width: 100%; height: 110vh;"> 
+      <p class="MainText">Farming is a profession <br>of hope.</p>
+      <!-- <button class="CenterBtn">HEllO</button> -->
+      
+      
+      <section>
+  <!-- Cards -->
+        <div class="cardList">
+  
+          <a href="#One">
+            <div class="Card">
+              <img src="{% static 'Images/Logos/ID.png' %}" class="CardImg">
+              <div>
+                <p>Identify</p>
               </div>
-          </div>
-
-      </div>
+            </div>
+          </a>
+  
+          <a href="#Four">
+            <div class="Card">
+              <img src="{% static 'Images/Logos/Hand.png' %}" class="CardImg">
+              <div>
+                <p>Scheme</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="#Two">
+            <div class="Card">
+              <img src="{% static 'Images/Logos/India (2).png' %}" class="CardImg">
+              <div>
+                <p>Map</p>
+              </div>
+            </div>
+          </a>
+  
+  
+          <a href="#Three">
+            <div class="Card">
+              <img src="{% static 'Images/Logos/FAQ.png' %}" class="CardImg">
+              <div>
+                <p>Forum</p>
+              </div>
+            </div>
+          </a>
+  
+          <a href="#Three">
+            <div class="Card">
+              <img src="{% static 'Images/Logos/Msg2.png' %}" class="CardImg">
+              <div>
+                <p>Chat</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+  <div></div>
+      <section class="Background One" id="One">
+        <img src="{% static 'Images/Plant_img (8).jpg' %}" class="OneImage">
+       <div >
+         <p class="OneHeading"> Diagnose your crop </p>
+         <p class="OneSub">Click a photo to test if your crop is healty.</p>
+  
+         <button class="OneBtn">Take a Photo</button>
+       </div>
+      </section>
+  
+      <section class="Background Two" id="Two">
+        <a href="/map"><button class="MapBtn">Go To Map</button></a>
+        <img src="{% static 'Images/Map.png' %}" class="SecMap">
+        <!-- Side k liye text daalna hai  -->
+      </section>
+  
+      <section class="Background Three" id="Three">
+        <div class="Chat">
+          <p class="inbtHeading">Chat</p>
+        </div>
+        <div class="Forum">
+          <p class="inbtHeading">Forum</p>
+          <p>Connect to other Farmers</p>
+        </div>
+      </section>
+  
+      <section class="Background Four" id="Four">
+        <div class="GovtScheme">
+          <p style="color:black">Government <br>Scheme</p>
+          <!-- <p>1. Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
+            2. Pradhan Mantri Fasal Bima Yojana (PMFBY)
+            3. National Mission For Sustainable Agriculture (NMSA)
+            4. Paramparagat Krishi Vikas Yojana (PKVY)
+            5. Kisan Credit Card (KCC)</p> -->
+          <img src="{% static 'Images/Plant_img (2).jpg' %}" class="Cropimg">
+        </div>
+        <div class="PlantInfo">
+          <p>Crop <br>Information</p>
+          <img src="{% static 'Images/Plant_img (9).jpg ' %}" class="Cropimg">
+        </div>
+      </section>
+  
+  <!--Chat Bot-->
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">
+      <!-- Chat with us! -->
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+  
+    <div class="content">
+        <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                  <form method="POST" action="">
+                    {% csrf_token %}
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <!--h5 id="chat-timestamp"></h5-->
+                        <p  class="userText"><span>{{user}}</span></p>
+                        <p  class="botText"><span>{{bot}}</span></p>
+                    </div>
+  
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input  class="input-box" type="text" name="input" name="input"
+                                placeholder="Type your message">
+                        </div>
+                        <div class="chat-bar-icons">
+                            <button>send</button>
+                        </div>
+                            
+                        
+  
+                        <!--div class="chat-bar-icons">
+                            <!-- <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i> >
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i-->
+                        </div>
+                    </div>
+                  </form>
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+  
+                </div>
+            </div>
+  
+        </div>
+    </div>
+  
   </div>
-
-</div>
-
-
- <!-- Footer -->
- <footer>
-    <div class="MainFooter">
-      <div class="FootLogo">
-        <p class="BottomKrishi">कृषि &nbsp; Unnati</p>
-        <p class="BottomUnnati">Farming is a profession of hope.</p>
+  
+  
+   <!-- Footer -->
+   <footer>
+      <div class="MainFooter">
+        <div class="FootLogo">
+          <p class="BottomKrishi">कृषि &nbsp; Unnati</p>
+          <p class="BottomUnnati">Farming is a profession of hope.</p>
+        </div>
+        <ul class="FootCol2">
+          <li class="FootHead"> Our Service</li>
+          <li>One</li>
+        </ul>
+        <ul>
+          <li class="FootHead">Contact Us</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+        <ul>
+          <li class="FootHead">Legal</li>
+          <li>Terms</li>
+          <li>Privacy Policy</li>
+        </ul>
       </div>
-      <ul class="FootCol2">
-        <li class="FootHead"> Our Service</li>
-        <li>One</li>
-      </ul>
-      <ul>
-        <li class="FootHead">Contact Us</li>
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-      </ul>
-      <ul>
-        <li class="FootHead">Legal</li>
-        <li>Terms</li>
-        <li>Privacy Policy</li>
-      </ul>
-    </div>
-    <hr>
-    <div class="bottomFooter">
-      <p>© 2022 Smart India Hackathon | </p>
-      <p> &nbsp;Team FARMbit</p>
-    </div>
-  </footer>
-  <!-- Main JS file -->
-<script src="{% static 'Js/index.js' %}" charset="UTF-8"></script>
-</body>
-
-<script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' %}"></script>
-<script src="{% static 'Js/responses.js' %}"></script>
-<script src="{% static 'Js/chat.js' %}"></script>
-<script src="{% static 'Js/sidebar.js' %}"></script>
-</html>
-
-
-
-
+      <hr>
+      <div class="bottomFooter">
+        <p>© 2022 Smart India Hackathon | </p>
+        <p> &nbsp;Team FARMbit</p>
+      </div>
+    </footer>
+    <!-- Main JS file -->
+  <script src="{% static 'Js/index.js' %}" charset="UTF-8"></script>
+  </body>
+  
+  <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' %}"></script>
+  <script src="{% static 'Js/responses.js' %}"></script>
+  <script src="{% static 'Js/chat.js' %}"></script>
+  <script src="{% static 'Js/sidebar.js' %}"></script>
+  </html>
+  
+  

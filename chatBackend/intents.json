@@ -1,0 +1,97 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "KrishiUnnati",
+        "patterns": [
+          "What is KrishiUnnati?",
+          "Why use this website?",
+          "how will you help farmers?"
+        ],
+        "responses": [
+          "we provide online help to farmers in remote areas",
+          "our website is very easy to use"
+        ]
+      },
+      {
+        "tag": "diseases",
+        "patterns": [
+          "Can you help me to identify and diagnose the plant disease?",
+          "solution for plant disease",
+          "how to find out about plant disease and cure?",
+          "can you help me with this crop disease?"
+        ],
+        "responses": [
+          "yes we have a feature to identify plant diseases",
+          "you can use the plant identification feature!"
+        ]
+      },
+      {
+        "tag": "signup",
+        "patterns": [
+          "How can I signup?",
+          "How to register?",
+          "Do i need email?",
+          "can i use aadhar number?"
+        ],
+        "responses": [
+          "Click on the signup button on the top right to signup",
+          "you can signup using your email ID"
+        ]
+      },
+      {
+        "tag": "contact",
+        "patterns": [
+          "How to contact you?",
+          "do you have email?",
+          "what is your customer care number?"
+        ],
+        "responses": [
+          "we have an email xxxxxxx",
+          "the customer care number is xxxxxxx"
+        ]
+      },
+      {
+        "tag": "weather",
+        "patterns": [
+          "tell me about weather forecast",
+          "how will be the weather?",
+          "what is today's temperature"
+        ],
+        "responses": [
+          "you can click on the map to see weather forecast",
+          "We have a feature to display weather forecast!"
+        ]
+      }
+    ]
+  }
