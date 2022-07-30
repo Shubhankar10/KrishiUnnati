@@ -27,6 +27,19 @@
   
     </head>
   <body>
+<div class="container-fluid" style=" background-color: white; z-index: 10;">
+    {% if request.user.is_authenticated %}
+        <p class="text-success">You are Logged In</p>
+        <p class="text-success">Username : {{ request.user.username }}</p>
+        <p class="text-success">first_name: {{ request.user.first_name }}</p>
+        <p class="text-success">last_name: {{ request.user.last_name }}</p>
+        <a href={% url 'logout_user' %} type="button" class="btn btn-success btn-lg">logout user</a>
+    {% else %}
+        <p class=" h3 text-danger">User is logged out</p>
+        <a href={% url 'register' %} type="button" class="btn btn-success btn-lg">Register</a>
+        <a href={% url 'login_user' %} type="button" class="btn btn-success btn-lg">login</a>
+    {% endif %}
+</div>
   <!-- TOP bar -->
       <div id="top">
         <p>India&nbsp;|&nbsp;support@gmail.com &nbsp;|&nbsp;+91</p>
@@ -40,7 +53,7 @@
   <!-- NAV BAR  -->
       <div class="head">
         <!-- <img src="{% static 'Images/BG (1).jpg' %}" class="logo"> -->
-        <p class="Krishi">कृषि </p>
+{#        <p class="Krishi">कृषि </p>#}
         <p class="Unnati">Unnati</p>
         <nav>
           <div class="navitems" >
@@ -53,7 +66,7 @@
             </ul>
           </div>
         </nav>
-        <a href="/signup"><button>Login/Signup</button></a>
+        <a href="/register"><button>Login/Signup</button></a>
       </div>
       <!-- Back to top button  -->
       <button id="TopBtn" onclick="goToTop()"><img src="{% static 'Images/Logos/BacktoTop.png' %}" class="BackToTop"></button>
@@ -62,7 +75,21 @@
       <p class="MainText">Farming is a profession <br>of hope.</p>
       <!-- <button class="CenterBtn">HEllO</button> -->
       
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <section>
   <!-- Cards -->
         <div class="cardList">
