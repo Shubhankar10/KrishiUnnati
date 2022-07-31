@@ -1,0 +1,72 @@
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+}
+.plantID{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFF7EC;
+}
+.plant{
+    position: relative;
+    top: 80px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.plant-left {
+    
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+
+}
+.plant-left h1{
+    line-height: -6px;
+    margin-left: 2.5em;
+}
+
+.plant-left p{
+    margin-top: 1em;
+    margin-left: 6em;
+    width: 400px;
+    font-size: 20px;
+}
+
+.image-upload{
+    position: relative;
+    left: 200px;
+    height: 500px;
+    width: 410px;
+    background-color: #A77D53;
+}
+
+.upload-box{
+    position: relative;
+    top: -18.5em;
+    left: 10.5em;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border: solid white;
+    height: 400px;
+    width: 300px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+/*#upload-button2{
+    position: relative;
+    padding: 8px 15px;
+    top:-12em;
+    color: white;
+    background-color: #644424;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid #644424;
+    height: 60px;
+}*/
+

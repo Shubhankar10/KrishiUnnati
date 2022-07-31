@@ -1,0 +1,102 @@
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+}
+
+.others{
+    height: 200vh;
+    background-color: var(--background);
+}
+
+.database-fig{
+    position: relative;
+    top: 370px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.database-fig-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.database-fig-left h1{
+    line-height: -2px;
+}
+
+.database-fig-left p{
+    position: relative;
+    left: 90px;
+    width: 400px;
+    font-size: 20px;
+}
+
+
+
+.others-square{
+    position: relative;
+    left: 300px;
+    height: 200px;
+    width: 200px;
+    background-color:var(--element);
+}
+
+.weather-fig{
+    position: relative;
+    top: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.weather-fig-left {
+    position: relative;
+    right: 50px;
+}
+
+.weather-fig-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-fig-right h1{
+    line-height: -2px;
+}
+
+.weather-fig-right p{
+    position: relative;
+    width: 400px;
+    font-size: 20px;
+}
+
+.govt-fig{
+    position: relative;
+    top: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.govt-fig-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.govt-fig-left h1{
+    line-height: -2px;
+}
+
+.govt-fig-left p{
+    position: relative;
+    left: 90px;
+    width: 400px;
+    font-size: 20px;
+}
+
