@@ -1,0 +1,54 @@
+:root{
+    --map-background: #DBD0BE;
+}
+
+
+.map-main{
+    height: 120vh;
+    background-color: var(--map-background);
+}
+
+
+.main-container-map{
+    position: relative;
+    top: 30vh;
+    display: grid;
+    grid-template-rows: 150px 1px;
+}
+
+.map-text-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.map-text-container h1{
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+
+.map-text-container p{
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+}
+
+.map-container{
+    display: flex;
+    top: 400px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image{
+    width:850px;
+    height:600px;
+}
