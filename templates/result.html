@@ -1,8 +1,18 @@
 <html>
     <body>
 
-        <h3>Chutiya banaya 01</h3>
+        <b>Plant name </b> {{plant_name}} <br>
+        <b>Plant class </b> {{pclass}} <br>
+        <b>Plant family </b> {{family}} <br>
+        <b>Plant genus </b> {{genus}} <br>
+        <b>Plant kindom </b> {{kindom}} <br>
+        <b>Plant order </b> {{order}} <br>
+        <b>Plant phylum </b> {{phylum}} <br>
+        <b> More Details </b> <a href='{{org_url}}'>Click Here</a>  <br>
+        <b> Img URL </b> <img src='{{img_url}}'width="50" height="100"> </img>
 
+        <br>
+        <b>Common </b>
         {% for i in res_orginal%}
         
         {{forloop.counter}} {{i}} 
@@ -11,40 +21,54 @@
 
         <br>
 
-        <h3>Chutiya banaya 02</h3>
+        <b> Description </b>
 
-        {% for i in res_value%}
-        
-        {{forloop.counter}} {{i}} 
-      
-        {% endfor %}
         <br>
-
-        <h3>Chutiya banaya 03 </h3>
-
-        {% for i in res_dis%}
-        
-        {{forloop.counter}} {{i}} 
-      
-        {% endfor %}
+        {{res_value}}
         <br>
+        <hr>
+        <hr>
+        <h2>
+            Disease
+        </h2>
+        <h3>
+            Prediction 01
+        </h3>
 
-        <h3>Chutiya banaya 04 </h4>
+        <b>Common name </b> {{ common_names.0 }} <br>
+        <b>name </b> {{name.0 }} <br>
+        <b>similar_images </b> <img src='{{similar_images.0 }}'width="300px" height="300px"> </img> <br>
+        <b>description </b> {{dis_desc.0 }} <br>
+        <b>wiki_url Read More</b> <a href='{{wiki_url.0 }}'> Click </a> <br>
 
-        {% for i in res_desc%}
+        <h3>
+            Prediction 02
+        </h3>
+
+        <b>Common name </b> {{ common_names.1 }} <br>
+        <b>name </b> {{name.1 }} <br>
+        <b>similar_images </b> <img src='{{similar_images.1 }}'width="300px" height="300px"> </img> <br>
+        <b>description </b> {{dis_desc.1 }} <br>
+        <b>wiki_url Read More</b> <a href='{{wiki_url.1 }}'> Click </a> <br>
+
+        <h3>
+            Prediction 03
+        </h3>
+
+        <b>Common name </b> {{ common_names.2 }} <br>
+        <b>name </b> {{name.2 }} <br>
+        <b>similar_images </b> <img src='{{similar_images.2 }}'width="300px" height="300px"> </img> <br>
+        <b>description </b> {{dis_desc.2 }} <br>
+        <b>wiki_url Read More</b> <a href='{{wiki_url.2 }}'> Click </a> <br>
+
+
+
+
         
-        {{forloop.counter}} {{i}} 
-      
-        {% endfor %}
-        <br>
 
-    <h4> Chutiya banaya 05 </h4>
 
-        {% for i in res_local%}
+
         
-        {{forloop.counter}} {{i}} 
-      
-        {% endfor %}
 
 
     </body>
