@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Css/PlantID.css' %} ">
+    <link rel="stylesheet" href="{% static 'Css/navbar.css' %}">
+    <script src="https://kit.fontawesome.com/0e7ccbd866.js" crossorigin="anonymous"></script>
+    <title>Plant Identification</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="sidebar">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+        </div>
+        <div class="imglogo">
+            <a href="/"><img src="{% static 'Images/Logo.png' %}" alt="logo" /> </a>
+        </div>
+        <div class="user-icon">
+           <a href=""></a>
+        </div>
+      </nav>
+
+      <div class="plantID">
+        <div class="plant">
+            <div class="plant-left">
+                <h1>Plant Identification</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
+                    perferendis corporis? sada sdad asd asd asd aLorem, ipsum dolor sit 
+                    amet consectetur adipisicing elit. Quam odit perferendis corporis? 
+                    sada sdad asd asd asd aLorem, ipsum dolor sit amet consectetur adi
+                    pisicing elit. Quam odit perferendis corporis? sada sdad asd asd asd a
+                </p>
+            </div>
+            <div class="plant-right">
+                <div class="image-upload">
+                    <form action="/imageprocess" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="img" class="lbp"><i class="fa fa-plus fa-5x upload-box" onchange="getImage(this.value);">
+                          
+                        </i></label>
+                        <input id='img' type="file" name="image" style="display: none; visibility: none; " required/>
+                        
+                       <br/>
+                        
+                        <input type="submit" value="submit" class="btn btn-default btn-main upload-button" /> 
+                    
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+  </div>
+
+  <script type="text/javascript">
+    function getImage(imagename)
+    {
+  var newimg=imagename.replace(/^.*\\/,"");
+  $('#display-image').html(newimg);
+    }
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
+ </script>
+</body>
+</html>

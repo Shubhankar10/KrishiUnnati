@@ -1,75 +1,123 @@
-<html>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    {% load static %}
 
-        <b>Plant name </b> {{plant_name}} <br>
-        <b>Plant class </b> {{pclass}} <br>
-        <b>Plant family </b> {{family}} <br>
-        <b>Plant genus </b> {{genus}} <br>
-        <b>Plant kindom </b> {{kindom}} <br>
-        <b>Plant order </b> {{order}} <br>
-        <b>Plant phylum </b> {{phylum}} <br>
-        <b> More Details </b> <a href='{{org_url}}'>Click Here</a>  <br>
-        <b> Img URL </b> <img src='{{img_url}}'width="50" height="100"> </img>
+    <link rel="stylesheet" href="{% static 'Css/plantresult.css' %}">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <title>PlantId</title>
+</head>
+<body>
+    <!--nav class="nav">
+        <div class="sidebar">
+          <!--button></button>
+        </div>
+        <div class="imglogo">
+            <img src="static/Images/logo.png" alt="logo" />
+        </div>
+        <div class="user-icon">
+           <a href=""></a>
+        </div>
+      </nav-->
 
-        <br>
-        <b>Common </b>
-        {% for i in res_orginal%}
+    <div class="container-fluid">
+        <h2 style="padding:1% 3% 0;">Possible Outcomes</h2>
+        <h4>Found Match</h4>
+        <div class="container-match">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                        <h5>{{plant_name}}</h5>
+                    <img src="{{img_url}}" alt="plantimg" style="width: 80%; height:80%;">
+                </div>
+    
+                <div class="col-lg-6 col-sm-8">
+                    <p style="font-weight:600;">Description</p>
+                    <div class="container" style="background-color:#F1EEEE; border-radius: 2%;">
+                        {{res_value}}
+                    </div>
+                    <p style="padding-top:2%; font-weight: 600;">Common Name: <br>
+                        {% for i in res_orginal.0 %}
         
-        {{forloop.counter}} {{i}} 
+                             {{forloop.counter}} {{i}} 
         
-        {% endfor %}
+                        {% endfor %}
+                    </p>
+                    <a href="{{org_url}}" style="float:right; color: black; padding-top: 5%;">Link</a>
+                </div>
 
+                <div class="col-lg-2 col-sm-4" style="border-left:2px dashed darkgrey;">
+                    <div class="plant-details">
+                        <ul style="padding: 20% 0 0; list-style-type: none;">
+                        <li>Kingdom: {{kindom}}</li>
+                        <li>Phylum: {{phylum}}</li>
+                        <li>Class: {{pclass}}</li>
+                        <li>Order: {{order}}</li>
+                        <li>Family: {{family}}</li>
+                        <li>Genus: {{genus}}</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
-
-        <b> Description </b>
-
-        <br>
-        {{res_value}}
-        <br>
-        <hr>
-        <hr>
-        <h2>
-            Disease
-        </h2>
-        <h3>
-            Prediction 01
-        </h3>
-
-        <b>Common name </b> {{ common_names.0 }} <br>
-        <b>name </b> {{name.0 }} <br>
-        <b>similar_images </b> <img src='{{similar_images.0 }}'width="300px" height="300px"> </img> <br>
-        <b>description </b> {{dis_desc.0 }} <br>
-        <b>wiki_url Read More</b> <a href='{{wiki_url.0 }}'> Click </a> <br>
-
-        <h3>
-            Prediction 02
-        </h3>
-
-        <b>Common name </b> {{ common_names.1 }} <br>
-        <b>name </b> {{name.1 }} <br>
-        <b>similar_images </b> <img src='{{similar_images.1 }}'width="300px" height="300px"> </img> <br>
-        <b>description </b> {{dis_desc.1 }} <br>
-        <b>wiki_url Read More</b> <a href='{{wiki_url.1 }}'> Click </a> <br>
-
-        <h3>
-            Prediction 03
-        </h3>
-
-        <b>Common name </b> {{ common_names.2 }} <br>
-        <b>name </b> {{name.2 }} <br>
-        <b>similar_images </b> <img src='{{similar_images.2 }}'width="300px" height="300px"> </img> <br>
-        <b>description </b> {{dis_desc.2 }} <br>
-        <b>wiki_url Read More</b> <a href='{{wiki_url.2 }}'> Click </a> <br>
-
-
-
-
+        <h4>Possible Disease</h4>
         
+        <div class="disease-match"> 
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card" style="width: 18rem;">
+                            
+                            <h4>{{name.0}}</h4>
+                            <img src="{{similar_images.0}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-title">Common Name: {{common_names.0}}</p> 
+                            <p class="card-title">Description</p>              
+                            <div class="card-text">{{dis_desc.0}}</div>
+                            <a href="{{wiki_url.0}}" style="color: black; font-size: x-small; float:right;">Link</a>
+                            </div> 
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <h4>{{name.1}}</h4>
+                            <img src="{{similar_images.1}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-title">Common Name: {{common_names.1}}</p> 
+                            <p class="card-title">Description</p>              
+                            <div class="card-text">{{dis_desc.1}}</div>
+                            <a href="{{wiki_url.1}}" style="color: black; font-size: x-small; float:right;">Link</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <h4>{{name.2}}</h4>
+                            <img src="{{similar_images.2}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-title">Common Name: {{common_names.2}}</p> 
+                            <p class="card-title">Description</p>              
+                            <div class="card-text">{{dis_desc.2}}</div>
+                            <a href="{{wiki_url.2}}" style="color: black; font-size: x-small; float:right;">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="uploadImg">
+            <h4>Didn't find what you were looking for?</h4>
+            <button class="upload">
+                <p>Upload another image</p>
+            </button>
+        </div>
+     </div>
+    </div>
 
-
-
-        
-
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
 </html>

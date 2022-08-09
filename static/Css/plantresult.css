@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;800&display=swap');
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: #FFF7EC;
+}
+.container-fluid{
+    width: 100%;
+    
+    background-color: #FFF7EC;
+}
+.container-fluid h2{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.container-fluid h4{
+    padding: 3% 5% 0;
+    font-weight: 600;
+}
+
+.container-fluid .container-match{
+    background-color: white;
+    margin: 0 5% 0;
+    padding: 1% 2% 2%;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px lightgray;
+}
+.plant-details{
+    padding: 0 1% 0;
+}
+.container-fluid .container-match .row h5{
+    font-weight: 600;
+}
+
+.container-fluid .disease-match{
+    padding: 0 2% 2%;
+}
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    background-color: white;
+    box-shadow: 1px 1px 20px lightgrey;
+    margin: 2rem 2rem 2rem;
+}
+.card p{
+ padding: 1% 3% 0;
+ font-size: x-small;
+}
+.card h4{
+    text-align: center;
+}
+.card .card-img-top{
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+}
+.card .card-text{
+    background-color: #F1EEEE;
+    border-radius: 2%;
+    padding: 0 2% 0;
+    font-size: small;
+}
+
+.card .card-body p{
+  font-size: small;
+  font-weight: 600;
+}
+
+.uploadImg{
+    text-align: center;
+}
+.uploadImg h4{
+    font-weight:550;
+}
+
+.uploadImg .upload{
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 5rem;
+    border: white;
+    margin: 1% 0 2%;
+    box-shadow: 1px 1px 20px lightgrey;
+}
+
+/* @media screen and (max-width:768px){
+    .card:not(:first-child){
+        display: none;
+    }
+    .cards-wrapper{
+        align-items: center;
+    }
+} */

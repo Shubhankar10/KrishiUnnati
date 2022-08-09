@@ -5,7 +5,7 @@ from .test01 import *
 
 # Create your views here.
 def imgupload(request):
-    return render(request,'upload.html')
+    return render(request,'plant.html')
 
 def result(request):
     return render(request,'index.html')

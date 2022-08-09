@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .chat-bar-collapsible.dark{
     --body-color: #18191a;
     --sidebar-color: #242526;
@@ -35,9 +37,6 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
-.content.dark{
-    color:var(--body-color);
-}
 
 .full-chat-block {
     width: 350px;
@@ -48,116 +47,144 @@
     height: max-content;
     transition: max-height 0.2s ease-out;
 }
-.content.dark{
-    color:var(--body-color);
-}
+
+
 .outer-container {
     min-height: 500px;
     bottom: 0%;
     position: relative;
 }
-
-.chat-container {
-    max-height: 500px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    scroll-behavior: smooth;
-    hyphens: auto;
-}
-
-.chat-container::-webkit-scrollbar {
-    display: none;
-}
-
-.chat-bar-input-block {
-    display: flex;
-    float: left;
+/* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    justify-content: space-between;
-    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(235, 235, 235);
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px 0px 10px 10px;
+    min-height: 100vh;
+}
+*/
+.container {
+    width: 370px;
+    overflow:hidden;
+    border-color: #000000;
 }
 
-.chat-bar-icons {
-    display: flex;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    width: 25%;
-    float: right;
+.container .title {
+  
+    color: black;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
     font-size: 20px;
 }
 
-#chat-icon:hover {
-    opacity: .7;
+.container .box {
+    border: 1px solid black;
+   
+    padding: 10px 15px;
+    min-height: 400px;
+    max-height: 400px;
 }
 
-/* Chat bubbles */
-
-#userInput {
-    width: 75%;
-}
-
-.input-box {
+.container .box .item {
+    display: flex;
     float: left;
-    border: none;
-    box-sizing: border-box;
-    width: 100%;
+    margin: 10px 0;
+}
+
+.container .box .item .icon {
+    background: #000000;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.container .box .item .msg {
+    background: white;
+    color: black;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 16px;
-    color: #000;
-    background-color: white;
-    outline: none
-}
-
-.userText {
-    color: white;
-    font-family: Helvetica;
-    font-size: 16px;
-    font-weight: normal;
-    text-align: right;
-    clear: both;
-}
-
-.userText span {
-    line-height: 1.5em;
-    display: inline-block;
-    background: #163519;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom-right-radius: 2px;
-    max-width: 80%;
-    margin-right: 10px;
-    animation: floatup .5s forwards;
-}
-
-.botText {
-    color: #000;
-    font-family: Helvetica;
-    font-weight: normal;
-    font-size: 16px;
-    text-align: left;
-}
-
-.botText span {
-    line-height: 1.5em;
-    display: inline-block;
-    background: #e5e6e1;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom-left-radius: 2px;
-    max-width: 80%;
+    width: 150px;
     margin-left: 10px;
-    animation: floatup .5s forwards
 }
 
+.container .box .item .msg p {
+    padding: 10px;
+}
 
+.container .box .item.right {
+    float: right;
+}
+
+.container .box .item.right .msg {
+    background: white;
+    color: black;
+}
+
+.container .typing-area {
+    width: 370px;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .typing-area .input-field {
+    width: 100%;
+    position: relative;
+}
+
+.container .typing-area .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.container .typing-area .input-field input:focus {
+    border-color: #000000;
+}
+
+.container .typing-area .input-field button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #000000;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.container .typing-area .input-field button:hover {
+    background: #000000;
+    color: white;
+}
+
+.container .typing-area .input-field input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
+/*
 @keyframes floatup {
     from {
         transform: translateY(14px);
@@ -168,13 +195,13 @@
         opacity: 1;
     }
 }
-
+*/
 @media screen and (max-width:600px) {
     .full-chat-block {
         width: 100%;
         border-radius: 0px;
     }
-    .chat-bar-collapsible {
+    .chat-bar-collapsible { 
         position: fixed;
         bottom: 0;
         right: 0;

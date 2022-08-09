@@ -1,4 +1,5 @@
 // Collapsible
+
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
@@ -6,16 +7,17 @@ for (let i = 0; i < coll.length; i++) {
         this.classList.toggle("active");
 
         var content = this.nextElementSibling;
-
-        if (content.style.maxHeight) {
+        
+        if (content.style.maxHeight==false) {
             content.style.maxHeight = null;
+            
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
         }
 
     });
 }
-
+/*
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -32,6 +34,8 @@ function getTime() {
     let time = hours + ":" + minutes;
     return time;
 }
+
+
 
 // Gets the first message
 function firstBotMessage() {
@@ -100,6 +104,7 @@ function buttonSendText(sampleText) {
 
 function sendButton() {
     getResponse();
+   
 }
 
 function heartButton() {
@@ -111,4 +116,4 @@ $("#textInput").keypress(function (e) {
     if (e.which == 13) {
         getResponse();
     }
-});
+});*/

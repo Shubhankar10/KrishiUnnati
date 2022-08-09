@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'Css/login.css' %}">
-  </head>
-  <body>
-    <div class="center">
-<!-- login form -->
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-           <label>Username</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" required>
-          <span></span>
-          <label style="margin-left: 1px;">Password</label>
-        </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login"><br><br>
-        <input type="submit" value="Seller Account">
-        <div class="signup_link">
-          Not a member? <a href="/signup" target="_self">Signup</a>
-        </div>
-        <hr><br>
-        <div class="other">
-        <p>Or Sign In with</p><br>
-            <button type ="button" class="LogBtn"><img src="{% static 'Images/Google_logo.png' %}" class="LogBtnimg"></button>
-            <button type ="button" class="LogBtn"><img src="{% static 'Images/FB_logo.png' %}" class="LogBtnimg"></button>
-            <!-- <button type ="button"><img src=""></button>
-            <button type ="button"><img src=""></button> -->
-            <br><br>
-        </div>
-      </form>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
 
-  </body>
+<div class="container-fluid">
+    {% if request.user.is_authenticated %}
+        <p class="text-success">You are Logged In</p>
+        <p class="text-success">email : {{ request.user.email }}</p>
+    {% else %}
+        <p class="text-danger">User is not logged in </p>
+    {% endif %}
+
+<form action="{% url 'login_user' %}" method="post" class="row g-3">
+    {% csrf_token%}
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">email</label>
+
+        <input name="email" type="" class="form-control" id="">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">LOG IN</button>
+    </div>
+</form>
+
+<div class="form-group">
+    {% for message in messages %}
+        <div class="alert alert-danger" role="alert">
+            {{message}}
+        </div>
+    {% endfor %}
+</div>
+</div>
+{#<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>#}
+
+
+</body>
 </html>

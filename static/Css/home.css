@@ -1,416 +1,218 @@
-
-/* Color Scheme  */
-/* Green Light: #77a721 */
-/* Background: #dbfdde */
-/* Font: #26360a */
-
-
+:root{
+    --element: #035C41;
+}
 
 *{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #163519;
-  }
-
-a,li,button{
-  text-decoration: none;
-  font-size: 15px;
-  }
-
-body{
-  /* background-color: #ecfeed; */
-  background-color: #daf3cd;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  margin: 0 auto;
-  }
-
-  .Background{
-    height: 110vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-home{
+    background-color: var(--background);
     width: 100%;
-  }
-  .One,.Three{
-    /* Greyish color #e5e6e1 */
-    /* Greenish color #daf3cd */
-    background-color: white;
-  }
-  .One{
-    height: 120vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+}
+
+.main-home .text-container {
+    grid-column: 1/2;
     display: flex;
-  }
-  .Two,.Four{
-    background-color: #eeedec;
-  }
-
-  /* Top Bar  */
-#top{
-  height: 6vh;
-  background-color: #77a721;
-  padding: 0px 1vw;
-  display: flex;
-  align-items: center;  
-  justify-content: space-between;
-  }
-#top>p{
-  color: white;
-  }
-#top>div>img{
-  height: 4vh;
-  padding: 0 0.5vw;
-  }
-.topBtn{
-  padding: 0px 1vh;
-  align-items: center;
-  border-radius: 0px;
-  border: 1px solid black;
-  color: white;
-}
-.topBtn:hover{
-  background-color: black;
-}
-  /* Header  */
-.head{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  padding-bottom: 0px;
-  background-color: white;
-  }
-
-  /* Logo  */
-  
-.Krishi{
-  font-family: 'Amita', cursive;
-  font-size:5vh;
-  position: absolute;
-  top: 6vh;
-  left: 2vw;
-}
-.Unnati{
-  font-family: 'Amita', cursive;
-  font-size:4vh;
-  margin-top: 4vh;
-  margin-left: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.navitems{
-  list-style: none;    
-  }
-.navitems li{
-  display: inline-block;
-  }
-.navitems li a{
-  transition: all 0.3s ease 0s;
-  color: #26360a;
-  padding: 2vh 1.5vw;
-  border-radius: 5px;
-  }
-  
-.navitems li a:hover {
-  color:white;
-  background-color: #26360a;
-  transition: all 0.3s ease 0s;
+.main-home .text-container h1{
+    width: 500px;
+    font-size: 66px;
+    font-weight: 700;
+    color: var(--element);
 }
 
-  .arrow:hover {
-    border: solid white;
-    border-width: 3px 0 0 3px ;
-    margin-bottom: 0;
-    margin-top: 2px ;
-  }
-  
-  .arrow {
-    border: solid #26360a;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    margin-bottom: 2px;
-    margin-left: 5px;
-}
-
-
-button{
-    padding:9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    background-color: #77a721; 
-  }
-
-button:hover{
-    background-color:#a5d154 ;
-  }
-
-  /*Main Image Text  */
-.MainText{
-    position: absolute;
-    top: 50%;
-    margin-left: 5vw;
-    /* left:10%; */
-    /* transform: translate(-50%, -50%); */
-    color: white;
-    font-size: 50px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-
-
-
-/* Back To Top Button  */
-.BackToTop{
-  width: 4vw; 
-}
-#TopBtn{
-  display: none;
-  z-index: 99;
-  position: fixed;
-  right: 0.5vw;
-  bottom: 2vh;
-  background-color: transparent;
-  padding: 0px;
-}
-#TopBtn:hover{
-  background-color: transparent;
-}
-
-
-
-  /* Card  */
-.cardList{
-      position: absolute;
-      top:110vh;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-
-  }
-.Card{
+.main-home .text-container p{
+    width: 500px;
     position: relative;
-    height: auto; 
-    width: auto;
-    background-color: #dbfdde;
-    border-radius: 20px;
-    margin: 0 2vw;
-    padding: 1vw;
+    /* left: 40px; */
+    font-size: 30px;
+    font-weight: 500;
+    color:var(--element);
+}
 
-    /* box-shadow: inset 0px 0px 40px 1px green; */
-    }
-    .Card>div{
-      display: flex; 
-      align-items: center;
-      justify-content: center;
-    }
-    .Card>div>p{
-    padding:1vh 1vw;
-    font-size: 3vh;
+
+.ellipse {
+    position: relative;
+    background: var(--element);
+    width: 600px;
+    height: 680px;
+    border-radius: 90% 0 0 100% / 50%;
   }
 
-  .CardImg{
-    width: 22vh;
-    height: 22vh;
-  }
 
-.OneImage{
-  height: 80vh;
-  margin: 5vh 2vw;
-  margin-top: 30vh;
-  position: relative;
-  float: inline-start;
+.square{
+    position: relative;
+    float: right;
+    top: 170px;
+    right: 300px;
+    height: 180px;
+    width: 190px;
+    background-color:#A77D53;
+
+    /* Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
 }
 
-.OneHeading{
-  position: relative;
-  float:left;
-  margin-top: 40vh;
-  margin-left: 15vw;
-  font-size: 4vw;
-}
-.OneSub{
-  font-size: 2vw;
-  margin-top: 60vh;
-  margin-left: 15vw;
+.square2{
+    position: relative;
+    float: right;
+    top: 300px;
+    right: 30px;
+    left: 10px;
+    height: 180px;
+    width: 190px;
+    background-color: #644424;
+
+    /* Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
 }
 
-.OneBtn{
-  height: 10vh;
-  width: 20vw;
-  border-radius: 10px;
-  font-size: 2vw;
-  position: relative;
-  margin-top: 10vh;
-  margin-left: 25vw;
+.home-button{
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.TwoHead{
+.home-button .button1{
+    position: relative;
+    width: 20px;
+    right: 230px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.home-button .button1 a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--element);
+    border-radius: 4px;
+}
+
+.home-button .button2{
+    position: relative;
+    width: 20px;
+    right: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.home-button .button2 a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: var(--element);
+    border: 3px solid var(--element);
+    border-radius: 4px;
+}
+
+#plant-button{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--element);
+    border-radius: 4px;
+    cursor: pointer;
+    border: solid var(--element);
+    height: 50px;
+}
+
+
+
+/* footer */
+
+footer{
+    padding: 9rem 0;
+}
+
+
+.footer-container{
+    max-width: 140rem;
+    margin: 0 auto;
+    /* display: flex; */
+}
+.f-about img{
+    width: 50%;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+footer h3 {
+    color: var(--third);
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+footer{
+    background-color: var(--element);
+}
+
+.f-links ul,
+.f-services ul,
+.f-support ul{
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
-  position: relative;
-  font-size: 4vw;
-  padding: 5vh 0 5vh 0;
-}
-.MapBtn{
-  height: 10vh;
-  width: 20vw;
-  border-radius: 10px;
-  font-size: 2vw;
-  position: absolute;
-  margin-top: 90vh;
-  margin-left: 5vw;
-  background-color: #163519;
-  color: white;
-}
-.SecMap{
-
-  height: 110vh;
-  padding-top: 5vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  list-style: none;
 }
 
-.Three{
-  padding: 5vh 4vw;
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a ,
+.f-support li,
+.f-support a {
+  font-size: 2rem;
+  color: #adadad;
+  text-transform: capitalize;
 }
 
-.Forum ,.Chat{
-  height: 45%;
-  /* background-color: #77a721; */
-}
-.inbtHeading{
-  border-bottom: 10px solid #26360a;
-  text-align: center;
-  margin: 0 auto;
-  width: 200px;
-  font-family: 'IM Fell English', serif;
-  font-weight: bold;
-  font-size: 5vh;
-}
+.f-credits p {
+    font-size: 2rem;
+    text-align: center;
+    color: #adadad;
+  }
   
-.inbtHeading:hover{
-  border-bottom: 10px double #26360a;
-}
-.Forum{
-  margin-top: 10vh;
-}
+  .credit-container{
+    position: relative;
+    top: 5rem;
+  }
+  
+  footer a:hover {
+    color: var(--third);
+  }
 
-.Four{
- display: grid;
- grid-template-columns: repeat(2,1fr);
- column-gap: 1vw;
- place-items: center;
-}
-.GovtScheme, .PlantInfo{
-  display: flex;
-  justify-content: center;
-  /* background-color: #77a721; */
-  color: white;
-  width: 70%;
-  height: 90%;
-}
-.Cropimg{
-  height: 60%;
-  opacity: 0.7;
-  transition: ease-out 1s   ;
-}
-.Cropimg:hover{
-  opacity: 1;
-}
-.PlantInfo>p,.GovtScheme>p{
-  position: absolute;
-  margin-top: 10vh;
-  z-index: 99;
-  color: white;
-  font-size: 5vh ;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* FOOTER  */
- footer{
-    background-color: #282828;
-    padding:7vh 0 20px 0;
+.credit-container .f-credits hr{
+    border: 2px solid rgb(255, 255, 255);
     width: 100%;
-    /* text-align: center; */
-  }
-
-  .MainFooter{
-  height: 40vh;
-  display: grid;
-  grid-template-columns:repeat(4,1fr);
-  column-gap: 5vw;
+    height: 1px;
+    background-color: white;
 }
-  
-.BottomKrishi{
-  color: white;
-  font-family: 'Amita', cursive;
-  font-size:5vh;
-  /* position: absolute; */
-  top: 6vh;
-  left: 2vw; 
-  text-align: center;
-}
-.BottomUnnati{
-  color:white;
-  font-family: 'Amita', cursive;
-  font-size:4vh;
-  margin-top: 7vh;
-  margin-left: 2vw;
-  text-align: center;
-}
-
-.MainFooter>ul>li ,.FootCol2>li{
-  margin: 1vh;
-  color: white; 
-  list-style-type: none;
-}
-.FootHead{
-  font-size: 3vh;
-}
-.bottomFooter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top:20px;
-}
-
-.bottomFooter p{
-  color: black;
-}
-hr{  
-  border: solid #EAF6F6 2px;
-  border-bottom: none;
-  width: 90%;
-  float: bottom;
-  margin:auto;
-}
-
