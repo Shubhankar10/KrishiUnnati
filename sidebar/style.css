@@ -1,0 +1,106 @@
+*{
+     list-style: none;
+     text-decoration: none;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+body{
+     background: #f5f6fa;
+}
+
+.container .sidebar{
+     background: #DBD0BE;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 300px;
+     height: 100%;
+     padding: 30px 0;
+     transition: all 0.5s ease;
+     border-radius: 0 20px 20px 0;
+}
+.container .sidebar .background{
+     background: #BD9F7E;
+     height: 25%;
+     width: 100%;
+     margin-top: -30px;
+     position: absolute;
+     border-radius: 0 0 10px 10px;
+}
+.container .sidebar .logo{
+     margin-bottom: 30px;
+     text-align: center;
+     position: inherit;
+}
+
+.container .sidebar .logo img{
+     display: block;
+     width: 130px;
+     height: 100px;
+     margin: 40px 0 0 20px;
+}
+
+.menu ul{
+     display: flex;
+     flex-direction: column;
+     margin-top: 200px;
+     margin-left: 10px;
+     position: relative;
+}
+
+.menu ul li a{
+     display: block;
+     padding: 13px 30px;
+     color: rgb(0, 0, 0);
+     font-size: 16px;
+     position: relative;
+}
+
+.menu ul li a .icon{
+     color: #dee4ec;
+     width: 30px;
+     display: inline-block;
+}
+
+
+.menu ul li a:hover,
+.menu ul li a.active{
+     color: #3a3937;
+
+     background:#A86100;
+     border-radius: 10px;
+     box-sizing: border-box;
+     transition: all 0.5s ease;
+}
+
+.background1{
+     background: #BD9F7E;
+     height: 10%;
+     width: 100%;
+     margin-top: 70px;
+     position: absolute;
+     border-radius: 0 0 20px 0;
+}
+
+.background1 ul{
+     display: flex;
+     flex-direction: row;
+     margin-top: 10px;
+     margin-left: 10px;
+     text-decoration: none;
+
+}
+
+.background1 li{
+     margin-left: 10px;
+     margin-top: 10px;
+     word-spacing: 2px;
+     color:#A86100
+}
+
+.background1 li a{
+     color:#A86100
+}
