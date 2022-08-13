@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+    City name : {{ location }} <br>
+    {{responsedate.0}}
+    
+    {% for s,a,n,sk in zipped %}
+     {{ forloop.counter }}
+    <b>Date </b> {{ s }}
+    <b>Desc </b> {{ a }}
+    <b>temp </b> {{n}} 
+    <b>humidty </b> {{sk}}
+    <br>
+    
+    {% endfor %}
+
+  
+    
+    <br>
+    
+ 
+</body>
+
+</html>

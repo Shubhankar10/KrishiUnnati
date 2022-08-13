@@ -5,7 +5,9 @@ from . import views
 from django.urls import include, path
 
 urlpatterns = [
+    path('weather',views.input,name='weather'),
+    path('weatherresult', views.result, name='weatherresult'),
     
-    path('wheather', views.wheather, name='wheather'),
 
+    
 ]

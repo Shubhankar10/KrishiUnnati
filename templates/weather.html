@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    
+    <form action='/weatherresult' method='POST'>
+        {% csrf_token %}
+    Cityname:<input type='text' name='Cityname'>
+    <input type='submit'>
+     
+    </form>
+</body>
+
+</html>
