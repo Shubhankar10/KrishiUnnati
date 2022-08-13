@@ -22,5 +22,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('',include('home.urls')),
     path('',include('imgupload.urls')),
-    path('',include('wheatherapp.urls')),
+    path('',include('weatherapp.urls')),
 ]

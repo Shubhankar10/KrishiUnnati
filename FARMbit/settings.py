@@ -50,7 +50,8 @@ INSTALLED_APPS = [
 
     'home',
     'imgupload',
-    'wheatherapp',
+    'weatherapp'
+    
 
 ]
 SITE_ID = 1
@@ -79,6 +80,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            
         },
     },
 ]
