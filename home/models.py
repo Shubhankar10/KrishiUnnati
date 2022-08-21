@@ -37,7 +37,7 @@ class CustomAccountManager(BaseUserManager):
 class NewUser(AbstractBaseUser, PermissionsMixin):
     # Add phone
     email = models.EmailField(_('email address'), unique=True)
-    username = models.CharField(max_length=150, default='user')
+    # username = models.CharField(max_length=150, default='user')
     first_name = models.CharField(max_length=150, blank=True)
     # last_name = models.CharField(max_length=150, blank=True, null=True)
     # dob = models.DateField(blank=False, null=True)
