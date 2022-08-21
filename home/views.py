@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from .models import NewUser
+import speech_recognition as sr
 
 # Create your views here.
 
@@ -31,6 +32,9 @@ def detail(request):
 
 def map(request):
     return render(request, 'map.html')
+
+def upload(request):
+    return render(request, 'upload.html')
 
 '''
 def detail(request):
@@ -94,3 +98,36 @@ def logout_user(request):
     auth.logout(request)
     return redirect(index)
     # return render(request, 'index.html')
+
+def voice(request):
+     if request.method == "POST":
+          # value=request.POST.get('vr2')
+          r = sr.Recognizer()
+          while(1):   
+               try:
+                    with sr.Microphone() as source2:
+                         # r.adjust_for_ambient_noise(source2, duration=0.2)
+                         audio2 = r.listen(source2)
+                         MyText = r.recognize_google(audio2)
+                         MyText = MyText.lower()
+                         # return HttpResponse(MyText)
+                         if (MyText.find('plant') != -1 or MyText.find('paudha') != -1 or MyText.find('fasal')!=-1 or MyText.find('paudhe')!=-1):
+                              return redirect('upload')
+                         elif(MyText.find('login') != -1):
+                              return redirect('login_user')
+                         elif(MyText.find('sign up') != -1):
+                              return redirect('register')
+                         elif(MyText.find('map') != -1 or MyText.find('naksha') != -1):
+                              return redirect('map')
+                         elif(MyText.find('government') != -1 or MyText.find('sarkari yojnaye') != -1):
+                              return redirect('government_scheme')
+                         elif(MyText.find('forum') != -1 or MyText.find('baat') != -1):
+                              return redirect('https://krishiunnatiforum.epizy.com/')
+                         elif(MyText.find('home') != -1 or MyText.find('mukhprisht') != -1):
+                              return redirect('home')
+
+               except sr.RequestError as e:
+                    print("Could not request results; {0}".format(e))
+         
+               except sr.UnknownValueError:
+                    print("unknown error occured")
