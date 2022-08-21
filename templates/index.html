@@ -14,11 +14,55 @@
     <link rel="stylesheet" href="{% static 'Css/Plant.css' %}">
     <link rel="stylesheet" href="{% static 'Css/other.css' %}">
     {% comment %} <link rel="stylesheet" href="{% static 'Css/chat.css' %}"> {% endcomment %}
+
+    <style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: black;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.overlayBox{
+    height: 60vh;
+    width: 40vw;
+    background-color: white;
+    padding: 5% 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+</style>
 </head>
 <body>
+                                    {#   OVERLay   #}
+    <div id="overlay" onclick="overlay_off()">
+        <div class="overlayBox">
+            <div id="text">Speak Now</div>
+        </div>
+    </div>
+                                    {#   OVERLay   #}
     <form method='POST' action='vr'>
         {% csrf_token %}
-        <button type='submit'>Speak</button>
+        <button type='submit' onclick="overlay_on()">Speak</button>
     </form>
 
     <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
@@ -199,5 +243,14 @@
 
       <script src="{% static 'Js/home.js' %}">
       </script>
+<script>
+function overlay_on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function overlay_off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
 </body>
 </html> 

@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'imgupload',
     'weatherapp',
 
-    'rosetta', # for translation
+    # 'rosetta', # for translation
 ]
 SITE_ID = 1
 
