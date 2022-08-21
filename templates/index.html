@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="{% static 'Css/other.css' %}">
     {% comment %} <link rel="stylesheet" href="{% static 'Css/chat.css' %}"> {% endcomment %}
 
-    <style>
+
+        {#   Overlay for Voice Recognition, #}
+    {# JS ki do line hai last mai, HTML ki 4-5 line hai body tag mai starting mai, and CSS ka ye pura tag  #}
+<style>
 #overlay {
   position: fixed;
   display: none;
@@ -53,13 +56,13 @@
 </style>
 </head>
 <body>
-                                    {#   OVERLay   #}
+                                    {#   Overlay for Voice Recognition   #}
     <div id="overlay" onclick="overlay_off()">
         <div class="overlayBox">
             <div id="text">Speak Now</div>
         </div>
     </div>
-                                    {#   OVERLay   #}
+                                    {#   Overlay for Voice Recognition   #}
     <form method='POST' action='vr'>
         {% csrf_token %}
         <button type='submit' onclick="overlay_on()">Speak</button>
@@ -243,7 +246,8 @@
 
       <script src="{% static 'Js/home.js' %}">
       </script>
-<script>
+
+<script>                                    {#   Overlay for Voice Recognition   #}
 function overlay_on() {
   document.getElementById("overlay").style.display = "block";
 }
@@ -252,5 +256,7 @@ function overlay_off() {
   document.getElementById("overlay").style.display = "none";
 }
 </script>
+
+
 </body>
 </html> 
