@@ -20,7 +20,9 @@ from home.views import mainpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
     path('',include('home.urls')),
     path('',mainpage.as_view(),),
     path('',include('imgupload.urls')),
+    path('',include('weatherapp.urls')),
 ]

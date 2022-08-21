@@ -38,10 +38,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django.contrib.sites',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+
     'home',
     'imgupload',
+    'weatherapp',
 ]
+SITE_ID = 1
 
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '603855679745-2mb4ehjk4vee3cjmshmsv945rlbgc1dj.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        }
+    }
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

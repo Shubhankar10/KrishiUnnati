@@ -1,0 +1,32 @@
+<html>
+<head>
+  
+ 
+</head>
+<body>
+
+
+    City name : {{ location }} <br>
+
+
+    {% for s,a,n,sk in zipped %}
+        {% if s.8 == responsedate.0.8 and s.9 == responsedate.0.9 %}
+     
+        <b>Date </b> {{ s }}
+        <b>Desc </b> {{ a }}
+        <b>temp </b> {{n}} 
+        <b>humidty </b> {{sk }}
+        <br>
+        {% else %}
+            {% if s.11 == "1" and s.12 == "2" %}
+ 
+            <b>Date </b> {{ s }}
+            <b>Desc </b> {{ a }}
+            <b>temp </b> {{n}} 
+            <b>humidty </b> {{sk }}
+            <br>
+            {% endif %}
+
+        {% endif %}
+
+    {% endfor %}

@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from .models import NewUser
 
-
 # Create your views here.
 
 class mainpage(TemplateView):
@@ -23,19 +22,15 @@ class mainpage(TemplateView):
 
         return render(request, self.Template_view, context)
 
-
 # Register/Login function se redirect hona hai main page pe.
 def index(request):
     return render(request, 'index.html')
 
-
 def detail(request):
     return render(request, 'details.html')
 
-
 def map(request):
     return render(request, 'map.html')
-
 
 '''
 def detail(request):
