@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,25 @@
     {% comment %} <link rel="stylesheet" href="{% static 'Css/chat.css' %}"> {% endcomment %}
 </head>
 <body>
+    <form method='POST' action='vr'>
+        {% csrf_token %}
+        <button type='submit'>Speak</button>
+    </form>
+
+    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+      <input name="next" type="hidden" value="{{ redirect_to }}">
+      <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+          {{ language.name_local }} ({{ language.code }})
+        </option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="{% trans 'Go' %}">
+    </form>
     <nav class="main-nav">
         <div class="logo">
             <a href="/"><img src="{% static 'Images/Logo.png' %}" alt="logo" /></a>
@@ -22,10 +42,10 @@
 
         <div class="menu-link">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/imgupload">Plant Identification</a></li>
-                <li><a href="#">Govt Scheme</a></li>
-                <li><a href="#">Map data</a></li>
+                <li><a href="#">{% trans 'Home' %}</a></li>
+                <li><a href="/imgupload">{% trans 'Plant Identification' %}</a></li>
+                <li><a href="#">{% trans 'Governement Scheme' %}</a></li>
+                <li><a href="#">{% trans 'Map' %}</a></li>
             </ul>
         </div>
         
@@ -80,25 +100,24 @@
         
         <div class="login-signup">
             <ul>
-                <li class="primary"><a href="/login_user">Login</a></li>
-                <li class="secondary"><a href="{% url 'register' %}">Signup</a></li>
+                <li class="primary"><a href="/login_user">{% trans 'Login' %}</a></li>
+                <li class="secondary"><a href="{% url 'register' %}">{% trans 'SignUp' %}</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="main-home">
         <div class="text-container">
-          <h1>Krishi Unnati</h1>
+          <h1>{% trans 'Krishi Unnati' %}</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-            unde eum magnam commodi sequi explicabo libero temporibus nam vitae.
+            {% trans 'Add Text here' %}
           </p>
           <div class="home-button">
             <div class="button1">
-              <a href="#">button1</a>
+              <a href="#">{% trans 'Button 1' %}</a>
             </div>
             <div class="button2">
-              <a href="#">button2</a>
+              <a href="#">{% trans 'Button 2' %}</a>
             </div>
           </div>
         </div>
@@ -112,12 +131,12 @@
           <div class="square-plant"></div>
         </div>
         <div class="right-container">
-          <h2> Plant Identification</h2>
+          <h2>{% trans 'Plant Identification' %}</h2>
           <p>
-            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            {% trans 'Add text here' %}
           </p>
             <div>
-              <a href="/imgupload"  id="plant-button">Button1</a>
+              <a href="/imgupload"  id="plant-button">{% trans 'Button 1' %}</a>
             </div>
         </div>
       </div>
@@ -126,10 +145,9 @@
       <div class="map-main">
       <div class="main-container-map">
         <div class="map-text-container">
-          <h1>Agricultural Map of India</h1>
+          <h1>{% trans 'Adgriculture Map of India' %}</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            exercitationem, incidunt inventore error pariatur necessitatibu
+            {% trans 'Add text here' %}
           </p>
         </div>
         <div class="map-container">
@@ -143,10 +161,9 @@
       <div class="others">
           <div class="database-fig">
               <div class="database-fig-left">
-                  <h1>Database Fig</h1>
+                  <h1>{% trans 'Database Figure' %}</h1>
                   <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
-                      perferendis corporis? sada sdad asd asd asd a
+                    {% trans 'Add text here' %}
                   </p>
               </div>
               <div class="database-fig-right">
@@ -159,10 +176,9 @@
                   <div class="others-square"></div>
               </div>
               <div class="weather-fig-right">
-                  <h1>Weather/Crop Prediction</h1>
+                  <h1>{% trans 'Weather Prediction' %}</h1>
                   <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
-                      perferendis corporis? sada sdad asd asd asd a
+                    {% trans 'Add text here' %}
                   </p>
               </div>
           </div>
@@ -170,10 +186,9 @@
           <!-- Govt Schemes -->
           <div class="govt-fig">
               <div class="govt-fig-left">
-                  <h1>Govt Scheme</h1>
+                  <h1>{% trans 'Governement Schemes' %}</h1>
                   <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
-                      perferendis corporis? sada sdad asd asd asd a
+                    {% trans 'Add text here' %}
                   </p>
               </div>
               <div class="govt-fig-right">
