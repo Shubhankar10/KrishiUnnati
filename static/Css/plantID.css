@@ -3,52 +3,35 @@
     --background: #FFF7EC;
 }
 
-.plantID{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--background);
-    overflow: hidden;
-}
-.plant{
-    position: relative;
-    top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 40rem;
-    background-color: var(--background);
-
+.plant-container{
+    background:var(--background);
 }
 
-.plant-left {
-    
+
+#plant-left{
     display: flex;
     flex-direction: column;
-    /*justify-content: center;
-    align-items: center;*/
-
-}
-.plant-left h1{
+    justify-content: center;
+    align-items: center; 
     position: relative;
-    left: 40px;
-    line-height: -6px;
-    margin-left: 2.5em;
+    left: 2rem;
 }
 
-.plant-left p{
+#plant-left p{
     margin-top: 1em;
     margin-left: 6em;
     width: 400px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 
 .image-upload form{
     position: relative;
-    left: 200px;
-    height: 500px;
-    width: 410px;
-    background-color: #A77D53;
+    left: 10rem;
+    height: 31rem;
+    width: 25rem;
+    background: url(../images/plant-background.png);
+    border-radius: 20px;
 }
 /* 
 .upload-box{
@@ -78,16 +61,19 @@
 }*/
 
 
-.upload-box .upload-sign{
+.lbq i{
     position: relative;
-    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 40px;
 }
 
 
 .upload-button{
     position: relative;
-    top: 6em;
-    left: 12em;
+    top : 5rem;
+    left: 10rem;
     color: black;
     text-decoration: none;
     color: white;
@@ -96,10 +82,13 @@
     border: 0px;
     border-radius: 10px;
 }
+.upload-button:hover{
+    color: white;
+    background-color: #644424;
+}
 
 .upload-box{
     position: relative;
-    top: 0.5em;
     left: 3rem;
     color: black;
     background-color: white;
@@ -107,7 +96,91 @@
     border: solid white;
     height: 400px;
     width: 300px;
-    padding-left: 60px;
-    padding-top: 60px;
+    text-align: center;
+    padding-top: 50%;
+    cursor: pointer;
+}
+
+.plant-ul{
+    position: relative;
+    left: 5rem; 
+}
+
+
+.plant-ul li{
+    font-size: 1.2rem;
+    list-style-type: circle ;
+}
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #plant-left {
+       align-items: center;
+    }
+ }
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1252.98px) { 
+    .container-fluid{
+        height: 100vh;
+    }
+    #plant-left {
+        position: relative;
+        top:100px; 
+        /* background-color: #035C41; */
+    }
+
+    #plant-left h1{
+        font-size: 1.5rem;
+    }
+    #plant-left p{
+        font-size: 1rem;
+    }
+
+    .plant-right{
+        position: relative;
+        top:100px;
+        /* background-color: #035C41; */
+    }
+
+    .image-upload form{
+        position: relative;
+        height: 25rem;
+        width: 20rem;
+        left: 15rem;    
+    }
+
+    .upload-box{
+        height: 300px;
+        width: 220px;
+    }
+    .upload-button{
+        left: 7.5rem;
+    }
+ }
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+   
+    #plant-left {
+        /* background-color: #035C41; */
+        position: relative;
+        left: 100px;
+        font-size: 20px;
+    }
+
+    .plant-right{
+        position: relative;
+        right:100px;
+        font-size: 20px;
+    }
 }
 

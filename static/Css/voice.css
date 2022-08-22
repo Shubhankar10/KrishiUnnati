@@ -1,0 +1,30 @@
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+}
+
+.voice{
+    position: fixed;
+    left: 90%;
+    z-index: 99;
+}
+
+.voice .inside-container{
+    position: relative;
+    float: right;
+    top: 90vh;
+    right:5%;
+    /* z-index: 99; */
+}
+
+.voice .inside-container button{
+    padding:15px 15px;
+    color: black;
+    background-color: #644424;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.voice .inside-container button i{
+   color: white;
+}
