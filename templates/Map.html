@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
-{% load i18n %}
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>India Agriculture Map</title>
     {% load static %}
-    <script src="{% static 'JS/MapData_JS.js' %}"></script>
-    <script src="{% static 'JS/Map_JS.js' %}"></script>
+    <script src="{% static 'jS/MapData_JS.js' %}"></script>
+    <script src="{% static 'jS/Map_JS.js' %}"></script>
     <style>
       body{
         margin: 0;
@@ -16,16 +16,25 @@
         /* border:2px solid black; */
         display:block;
         margin: 4vh auto;
-        height: 150vh;
+        height: 120vh;
         overflow: hidden;
+      }
+
+      img{
+        color: black;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        height: 30px;
+        width: 40px;
       }
     </style>
   </head>
   <body>
+    <a href="{% url 'index' %}"><img src="{% static 'Images/BackArrow.png' %}"></a>
     <div id="map"></div>
     
     </body>
 </html>
       
     
-

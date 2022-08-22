@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 {% load i18n %}
 <html lang="en">
@@ -6,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishi Unnati</title>
+
     {% load static %}
     <link rel="stylesheet" href="{% static 'Css/Home.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Header.css' %}">
@@ -13,61 +15,22 @@
     <link rel="stylesheet" href="{% static 'Css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Plant.css' %}">
     <link rel="stylesheet" href="{% static 'Css/other.css' %}">
-    {% comment %} <link rel="stylesheet" href="{% static 'Css/chat.css' %}"> {% endcomment %}
-
-
-        {#   Overlay for Voice Recognition, #}
-    {# JS ki do line hai last mai, HTML ki 4-5 line hai body tag mai starting mai, and CSS ka ye pura tag  #}
-<style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: black;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-.overlayBox{
-    height: 60vh;
-    width: 40vw;
-    background-color: white;
-    padding: 5% 6%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-</style>
+    <link rel="stylesheet" href="{% static 'Css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/chat.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/voice.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/translate.css' %}">
 </head>
 <body>
-                                    {#   Overlay for Voice Recognition   #}
-    <div id="overlay" onclick="overlay_off()">
-        <div class="overlayBox">
-            <div id="text">Speak Now</div>
-        </div>
-    </div>
-                                    {#   Overlay for Voice Recognition   #}
-    <form method='POST' action='vr'>
+  <div class="voice">
+    <div class="inside-container"> 
+      <form method='POST' action='vr'>
         {% csrf_token %}
-        <button type='submit' onclick="overlay_on()">Speak</button>
-    </form>
-
+        <button type='submit' name='vr2'><i class="fa-solid fa-microphone"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="translate-inner">
     <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
       <input name="next" type="hidden" value="{{ redirect_to }}">
       <select name="language">
@@ -81,109 +44,111 @@
         {% endfor %}
       </select>
       <input type="submit" value="{% trans 'Go' %}">
-    </form>
+    </form> 
+  </div>
+
+   <!-- chat-->
+   <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+    
+    <div class="content">
+      <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+              <div class="chat-container">
+                  <!-- Messages -->
+                  <div id="chatbox">
+                <form method="POST" action="">
+                  {% csrf_token %}
+                  <div class="item right">
+                    <div class="msg">
+                    {{ user }}
+                    </div>
+                  </div>
+                  <br>
+                  <div class="item">
+                    <div class="icon">
+                    </div>  
+                    <div class="msg"> 
+                      {{ bot }}
+                    </div>
+                  </div>
+              </div>
+
+              <div class="typing-area">
+              <div class="input-field">
+                <input type="text"  name="input" name="input" placeholder="Type your message" required>
+                <button>Send</button>
+              </div>
+              </div>
+            </form>
+          </div>
+    
+          <div id="chat-bar-bottom">
+              <p></p>
+          </div>
+
+      </div>
+  </div>
+
+</div>
+</div>
     <nav class="main-nav">
         <div class="logo">
             <a href="/"><img src="{% static 'Images/Logo.png' %}" alt="logo" /></a>
         </div>
 
         <div class="menu-link">
-            <ul>
-                <li><a href="#">{% trans 'Home' %}</a></li>
-                <li><a href="/imgupload">{% trans 'Plant Identification' %}</a></li>
-                <li><a href="#">{% trans 'Governement Scheme' %}</a></li>
-                <li><a href="#">{% trans 'Map' %}</a></li>
+            <ul>  
+                <li><a href="/">{% trans "Home" %}</a></li>
+                <li><a href="/imgupload">{% trans "Plant Identification" %}</a></li>
+                <li><a href="">{% trans "Government Schemes" %}</a></li>
+                <li><a href="/map">{% trans "Map" %}</a></li>
             </ul>
-        </div>
-        
-{% comment %}       
-        <div id="overlay" >
-          <div id="overlaytext">
-            <div class="login-container">
-              <div class="logo">
-                <img src="static/Images/logo.png" alt="logo" />
-              </div>
-              <div class="cross"><button onclick="off()"><i class="fa-solid fa-xmark"></i></button></div>
-              <h4>Login</h4>
-              <br>
-              <form>
-                <div class="row">
-                  <div class="col-8" style="margin-left: 90px;">
-                    <label class="form-label">Email</label>
-                    <input name="email" type="text" class="form-control" >
-                  </div>
-                  <div class="col-8" style="margin-left: 90px;">
-                    <label class="form-label">Password</label>
-                    <input name="password" type="password" class="form-control" >
-                  </div>
-                  <div class="col-8" style="margin-left: 90px;">
-                    <button type="submit">Login</button>
-                  </div>
-                  <div class="col-8" style="margin-left: 90px;">
-                    <p>New User? <a href="signUp.html">Signup Here</a></p>
-                  </div>
-                </div>
-                <div class="row" style="color: #035C41; margin:0px 60px 0px;">
-                  <div class="col"><hr></div>
-                  <div class="col col-md-auto" style="font-size:15px; padding-top:10px">or Login with</div>
-                  <div class="col"><hr></div>
-                </div>
-                <div class="row">
-                  <div class="col-6"><button style="width:150px ; margin-left: 80px;">google</button></div>
-                  <div class="col-6"><button style="width:150px ; margin-left: 10px;">facebook</button></div>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
         <div class="login-signup">
             <ul>
-                <li class="primary"><button onclick="on()">Login</button></li>
-                <li class="secondary"><a href="signUp.html">Signup</a></li>
-            </ul>
-        </div>
-    </nav> {% endcomment %}
-
-        
-        <div class="login-signup">
-            <ul>
-                <li class="primary"><a href="/login_user">{% trans 'Login' %}</a></li>
-                <li class="secondary"><a href="{% url 'register' %}">{% trans 'SignUp' %}</a></li>
+                <li class="primary"><a href="{% url 'login_user' %}">{% trans "Login" %}</a></li>
+                <li class="secondary"><a href="{% url 'register' %}">{% trans "SignUp" %}</a></li>
             </ul>
         </div>
     </nav>
 
+    
     <div class="main-home">
         <div class="text-container">
-          <h1>{% trans 'Krishi Unnati' %}</h1>
+          <h1>{% trans "Krishi Unnati" %}</h1>
           <p>
-            {% trans 'Add Text here' %}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            unde eum magnam commodi sequi explicabo libero temporibus nam vitae.
           </p>
           <div class="home-button">
             <div class="button1">
-              <a href="#">{% trans 'Button 1' %}</a>
-            </div>
-            <div class="button2">
-              <a href="#">{% trans 'Button 2' %}</a>
+              <a href="#">Click Here</a>
             </div>
           </div>
         </div>
         <div class="side-container">
+          <img src="{% static 'Images/SideImg.png' %}" alt="side-img" class="side-img"/>
         </div>
       </div>
 
        <!-- Plant Identification  -->
       <div class="main-container-plant">
         <div class="left-container">
-          <div class="square-plant"></div>
+          <div >
+            <img src="{% static 'Images/plant.png' %}" alt="plant" class="square-plant"/>
+          </div>
         </div>
         <div class="right-container">
-          <h2>{% trans 'Plant Identification' %}</h2>
+          <h2>{% trans "Plant Identification" %}</h2>
           <p>
-            {% trans 'Add text here' %}
+            {% trans "Check if your plant is healthy and find solutions to diseases if any" %}   
           </p>
             <div>
-              <a href="/imgupload"  id="plant-button">{% trans 'Button 1' %}</a>
+              <a href="/imgupload"  id="plant-button">Button1</a>
             </div>
         </div>
       </div>
@@ -192,13 +157,13 @@
       <div class="map-main">
       <div class="main-container-map">
         <div class="map-text-container">
-          <h1>{% trans 'Adgriculture Map of India' %}</h1>
+          <h1>{% trans "Agricultural Map of India" %}</h1>
           <p>
-            {% trans 'Add text here' %}
+            {% trans "Move to a place on the Map to get areawise information" %}
           </p>
         </div>
         <div class="map-container">
-            <img src="{% static 'Images/map.png' %}" alt="map" class="map-image"/>
+            <a href="/map"><img src="{% static 'Images/map.png' %}" alt="map" class="map-image"/></a> 
         </div>
       </div>
     </div>
@@ -208,24 +173,30 @@
       <div class="others">
           <div class="database-fig">
               <div class="database-fig-left">
-                  <h1>{% trans 'Database Figure' %}</h1>
+                  <h1>Database</h1>
+                  
                   <p>
-                    {% trans 'Add text here' %}
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odit
+                      perferendis corporis? sada sdad asd asd asd a
                   </p>
               </div>
               <div class="database-fig-right">
-                  <div class="others-square"></div>
+                  <div >
+                    <img src="{% static 'Images/flower.png' %}" alt="others" class="others-square"/>
+                  </div>
               </div>
           </div>
          <!-- Weather/Crop Prediction  -->
           <div class="weather-fig">
               <div class="weather-fig-left">
-                  <div class="others-square"></div>
+                  <div>
+                    <img src="{% static 'Images/flower.png' %}" alt="others" class="weather-square"/>
+                  </div>
               </div>
               <div class="weather-fig-right">
-                  <h1>{% trans 'Weather Prediction' %}</h1>
+                  <h1>Weather/Crop <br> Prediction</h1>
                   <p>
-                    {% trans 'Add text here' %}
+                    Find out about the weather forecast & best possible crop yield   
                   </p>
               </div>
           </div>
@@ -233,30 +204,114 @@
           <!-- Govt Schemes -->
           <div class="govt-fig">
               <div class="govt-fig-left">
-                  <h1>{% trans 'Governement Schemes' %}</h1>
+                  <h1>Govt Scheme</h1>
                   <p>
-                    {% trans 'Add text here' %}
+                    Discover about all the latest & important government schemes    
                   </p>
               </div>
               <div class="govt-fig-right">
-                  <div class="others-square"></div>
+                  <div >
+                    <img src="{% static 'Images/flower.png' %}" alt="others" class="others-square"/>
+                  </div>
               </div>
           </div>
-      </div>  
+        </div>
 
-      <script src="{% static 'Js/home.js' %}">
-      </script>
+      <!-- forum section -->
+   <div class="forum-container">
+    <div class="forum-fig">
+      <div class="forum-fig-left">
+        <h1>Forum </h1>
+        <h2>Connect. Share. Grow.</h2>
+        <p>
+          Use our Forum to recieve and offer help on any farming queries. <br>
+          Get to know about nearby renting/ on-sale farm products    
+        </p>
+      </div>
+      <div class="forum-fig-right">
+        <div class="forum-fig-sections">
+          <div class="tabs"><a href="https://krishiunnatiforum.epizy.com/?i=1">Forum</a></div>
+          <div class="tabs">Ask Experts</div>
+          <div class="tabs">Rent/Sell</div>
+        </div>
+        <div class="rectangle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-<script>                                    {#   Overlay for Voice Recognition   #}
-function overlay_on() {
-  document.getElementById("overlay").style.display = "block";
-}
 
-function overlay_off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
+    <div class="services-container">
+      <h1>Services<hr style="display: inline-block;"></h1>
+      
+      <div class="services-section">
+        <div class="services">WA</div>
+        <div class="services">IVR</div>
+        <div class="services">SMS</div>
+      </div>
+    </div>
 
+ 
+  
+   <!-- footer -->
+   <footer>
+    <div class="footer-container grid">
+      <div class="f-about">
+        <img src="{% static 'Images/WhiteLogo.png' %}" alt="">
+      </div>
 
+      <div class="f-links">
+         <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+           <li></span><a href="#">Contact Us</a></li>
+            <li><a href="#">SIH 2022</a></li>
+        </ul>
+      </div>
+
+       <div class="f-services"> 
+          <h3>Services</h3>
+        <ul>
+          <li><a href="/imgupload">Plant Identification</a></li>
+           <li><a href="#">Forum</a></li>
+            <li><a href="#">Voice Assistant</a></li>
+            <li><a href="#">Weather Prediction</a></li>
+            <li><a href="#">Database Analysis</a></li>
+            <li><a href="#">Govt Scheme</a></li>
+        </ul>
+      </div>
+
+      <div class="f-support">
+        <h3>Support</h3>
+      <ul>
+        <li><a href="#">Whatsapp Bot</a></li>
+         <li><a href="#">SMS Bot</a></li>
+          <li><a href="#">IVR </a></li>
+      </ul>
+    </div>
+
+    <div class="f-services"> 
+      <h3>Socials</h3>
+    <ul>
+      <li><a href="#">LinkedIn</a></li>
+       <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+
+    <div class="credit-container">
+      <div class="f-credits">
+        <hr>
+        <p>Team FARMbit</p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{% static 'js/chat.js' %}"></script>
+  <script src="https://kit.fontawesome.com/0e7ccbd866.js" crossorigin="anonymous"></script>
 </body>
-</html> 

@@ -1,5 +1,5 @@
+
 <!DOCTYPE html>
-{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,16 +18,16 @@
             <a href="/"><img src="{% static 'Images/Arrow.png' %}"  style="margin: 20px 10px;"/></a>
         </div>
         <div class="logo">
-        <img src="{% static 'Images/logo.png' %}" alt="logo" />
+        <img src="{% static 'Images/Whitelogo.png' %}" alt="logo" />
         </div>
     </div>
     <div class="container-fluid">
-        <p style="text-align: right; margin-top: 15px;"> Already a user? <a href="" style="color:black;">Sign in here</a></p>
+        <p style="text-align: right; margin-top: 15px;"> Already a user? <a href="/login_user" style="color:black;">Sign in here</a></p>
         <div class="container">
         <h3>Sign Up</h3>
         <div class="row" style="padding-top: 10px;">
             <div class="col"><button >Google</button></div>
-            <div class="col"><button >Facebook</button></div>
+            <div class="col"><button >Aadhar</button></div>
         </div>
         <br>
         <div class="row">
@@ -61,7 +61,7 @@
             </div>
     
             <div class="col-12">
-                <button type="submit" class="btn btn-success btn-lg">REGISTER</button>
+                <button type="submit" class="btn btn-success btn-lg">Create Account</button>
             </div>
         </form>
 
@@ -76,4 +76,3 @@
     </div>
   </div>
 </body>
-</html>
