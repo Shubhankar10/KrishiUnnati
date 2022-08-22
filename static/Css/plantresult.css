@@ -3,13 +3,7 @@
     --element: #035C41;
     --background: #FFF7EC;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
-}
+
 body{
     background-color: #FFF7EC;
 }
@@ -46,6 +40,9 @@ body{
 }
 .cards-wrapper{
     display: flex;
+}
+.cards-container{
+    justify-content: space-evenly;
 }
 .card{
     background-color: white;
@@ -85,6 +82,7 @@ body{
 
 .uploadImg .upload{
     background-color: white;
+    color: black;
     border-radius: 0.5rem;
     width: 40%;
     height: 5rem;

@@ -6,13 +6,6 @@
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 a{
     text-decoration: none;
     color: var(--element);
@@ -50,6 +43,7 @@ li{
 }
 .menu-link ul li a{
     text-transform: captialize;
+    font-size: 1.2rem;
 }
 
 .login-signup ul{
@@ -70,6 +64,7 @@ li{
     padding: 6px 17px;
     background-color: var(--element);
     border: 1px rgb(2, 70, 10) solid;
+    font-size: 1.2rem;
 }
 
 .login-signup ul .primary a{

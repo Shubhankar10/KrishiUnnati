@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;800&display=swap');
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: #FFF7EC;
+}
+h2{
+    margin: 2% 5% 2%;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+ul{
+    font-weight: 600;
+    padding: 10% 0 0;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    float: right;
+}
+h4{
+    font-weight: 600;
+    text-align: right;
+    padding-top: 2%;
+}
+
+.weather-container{
+    margin: 1% 5% 2%;
+    border-radius: 1rem;
+    background-color: #72af9d;
+    padding: 2% 4% 2%;
+}
+.weather-container.temp{
+    
+    font-weight: 700;
+    float:right;
+   
+}
+.row{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.wrapper{
+    display: flex;
+    
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.weather-sections{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.weather-sections .blocks{
+    /* margin: 1% 4% 2%;    */
+    border-radius: 1rem;
+    background-color: #72af9d;
+    /* padding: 20px 10px; */
+}
+.weather-sections .blocks p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.weather-sections .blocks img{
+    width: 10px;
+    height: 50px;
+    display: block;
+    margin-left: auto; 
+     margin-right: auto;
+     width: 50%;
+}

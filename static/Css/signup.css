@@ -3,12 +3,6 @@
     --background: #FFF7EC;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
 .signUp{
     width: 100%;
@@ -47,9 +41,9 @@ button{
     padding: 10px 20px 10px;
     width: 300px;
 }
-.form-label{
+/* .form-label{
     padding-top: 10px;
-}
+} */
 
 .form-control{
     background-color:#DBD0BE;

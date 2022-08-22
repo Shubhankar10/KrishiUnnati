@@ -4,7 +4,7 @@
 }
 
 .others{
-    height: 200vh;
+    height: 280vh;
     background-color: var(--background);
 }
 
@@ -23,26 +23,37 @@
     align-items: center;
 
 }
-.database-fig-left h1{
+/* .database-fig-left h1{
     line-height: -2px;
-}
+    font-size: 3rem;
+} */
 
 .database-fig-left p{
     position: relative;
-    left: 90px;
+    left: 50px;
     width: 400px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 
 
 .others-square{
     position: relative;
-    left: 300px;
-    height: 200px;
-    width: 200px;
+    left: 150px;
+    height: 350px;
+    width: 350px;
     background-color:var(--element);
 }
+
+.weather-square{
+    position: relative;
+    left: 300px;
+    height: 350px;
+    width: 350px;
+    background-color:var(--element);
+}
+
+
 
 .weather-fig{
     position: relative;
@@ -66,12 +77,16 @@
 
 .weather-fig-right h1{
     line-height: -2px;
+    font-size: 3rem;
+    text-align: end;
 }
 
 .weather-fig-right p{
     position: relative;
     width: 400px;
-    font-size: 20px;
+    /* left: -30px;     */
+    font-size: 1.5rem;
+    text-align: end;
 }
 
 .govt-fig{
@@ -89,14 +104,15 @@
     align-items: center;
 }
 
-.govt-fig-left h1{
+.govt-fig-left h1,.weather-fig-right h1,.database-fig-left h1{
     line-height: -2px;
+    font-size: 3rem;
 }
 
 .govt-fig-left p{
     position: relative;
-    left: 90px;
+    left: 50px;
     width: 400px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
