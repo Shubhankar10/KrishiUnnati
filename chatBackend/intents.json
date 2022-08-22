@@ -1,76 +1,85 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, welcome to KrishiUnnati",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "KrishiUnnati",
         "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
+          "What is Krishiunnati?",
+          "Why use this website Krishiunnati?",
+          "how will you help farmers?",
+          "How krishiunnati could help me?",
+          "What you can do?",
+          "What help you provide?",
+          "How you can be helpful?",
+          "What support is offered"
         ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "KrishiUnnati",
-        "patterns": [
-          "What is KrishiUnnati?",
-          "Why use this website?",
-          "how will you help farmers?"
-        ],
-        "responses": [
-          "we provide online help to farmers in remote areas",
-          "our website is very easy to use"
-        ]
-      },
-      {
-        "tag": "diseases",
-        "patterns": [
-          "Can you help me to identify and diagnose the plant disease?",
-          "solution for plant disease",
-          "how to find out about plant disease and cure?",
-          "can you help me with this crop disease?"
-        ],
-        "responses": [
-          "yes we have a feature to identify plant diseases",
-          "you can use the plant identification feature!"
-        ]
-      },
-      {
-        "tag": "signup",
-        "patterns": [
-          "How can I signup?",
-          "How to register?",
-          "Do i need email?",
-          "can i use aadhar number?"
-        ],
-        "responses": [
-          "Click on the signup button on the top right to signup",
-          "you can signup using your email ID"
-        ]
-      },
-      {
-        "tag": "contact",
+      "responses": [
+        "We provide online/offline help to farmers in remote areas",
+        "KishiUnnati is a teleconsultation website for farmers!",
+        "We provide consultation services to farmer of India"
+      ]
+    },
+    {
+      "tag": "diseases",
+      "patterns": [
+        "Can you help me to identify and diagnose the plant disease?",
+        "solution for plant disease",
+        "how to find out about plant disease and cure?",
+        "can you help me with this crop disease?"
+      ],
+      "responses": [
+        "yes we have a feature to identify plant diseases",
+        "you can use the plant identification feature!",
+        "click a picture and upload in the plant diagnosis page to get plant health details"
+      ]
+    },
+    {
+      "tag": "signup",
+      "patterns": [
+        "How can I signup?",
+        "How to register?",
+        "Do i need email?",
+        "How can I login?",
+        "can i use aadhar number?"
+      ],
+      "responses": [
+        "Click on the signup button on the top right.",
+        "you can signup using your email ID",
+        "you have to signup using an email ID or mobile number"
+      ]
+    },
+    {
+      "tag": "contact",
         "patterns": [
           "How to contact you?",
           "do you have email?",
@@ -78,20 +87,189 @@
         ],
         "responses": [
           "we have an email xxxxxxx",
-          "the customer care number is xxxxxxx"
+          "we have a customer care number xxxxxxx",
+          "you can contact us on xxxxxxx "
         ]
-      },
-      {
-        "tag": "weather",
+    },
+    {
+      "tag": "weather",
         "patterns": [
           "tell me about weather forecast",
           "how will be the weather?",
-          "what is today's temperature"
+          "what is today's temperature",
+          "temperature",
+          "weather"
         ],
         "responses": [
-          "you can click on the map to see weather forecast",
+          "Please click on the map to see weather forecast",
           "We have a feature to display weather forecast!"
         ]
-      }
-    ]
-  }
+    },
+    {
+      "tag": "news",
+      "patterns": [
+          "news",
+          "latest news",
+          "government new schemes",
+          "what are the new schemes",
+          "government schemes information",
+          "tell me about government schemes"
+      ],
+      "responses": [
+          "Please click on the Govt. schemes tab to get all the latest information"
+      ]
+    },
+    {
+      "tag": "offline",
+      "patterns": [
+          "do you have any offline services?",
+          "offline services?"  
+      ],
+      "responses": [
+          "yes we have IVR services and sms services."
+      ]
+    },
+    {
+      "tag": "Features",
+      "patterns": [
+        "What are the Features of this website?",
+        "What help does it offer?",
+        "What can I use from this website?",
+        "Features of KrishiUnnati"
+      ],
+      "responses": [
+        "We offer Plant and it's Disease's Identifaction,Forum,ChatBot,Voice Assistant,Weather Prediction,A list of Govt Schemes helpful for farmers, Whatsapp Bot,SMS Bot,IVR service.",
+        "Our Features are : Plant and it's Disease's Identifaction,Forum,ChatBot,Voice Assistant,Weather Prediction,A list of Govt Schemes helpful for farmers, Whatsapp Bot,SMS Bot,IVR service."
+      ]
+    },
+    
+    {
+      "tag": "forum",
+      "patterns": [
+        "What is forum",
+        "What can i do with forum",
+        "What does forum do"
+      ],
+      "responses": [
+        "It is a peer-to-peer consultation platform where the farmers will be able to connect with farmers as well as experts from all over the country.",
+        "Farmers can come in contact with other farmers to ask for help and give advice to each other."
+      ]
+    },
+
+    {
+      "tag": "VoiceAssistant",
+      "patterns": [
+        "What is the voice assistant",
+        "How does Voice Assistant work"
+      ],
+      "responses": [
+        "The Voice Assistant is a guide through the website. You just need to speak and it will help with anything you want.",
+        "You just need to speak and the Voice Assistant will guide you and explain everything you want to know about the website."
+      ]
+    },
+
+    {
+      "tag": "f1",
+      "patterns": [
+        "How to contact soil centres"
+      ],
+      "responses": [
+        "You can find the number to your nearest centre in this xxxxxx section."
+      ]
+    },
+
+    {
+      "tag": "f2",
+      "patterns": [
+        "How do I sell my product here"
+      ],
+      "responses": [
+        "You can go to forum to sell or rent any product."
+      ]
+    },
+
+    {
+      "tag": "RiceCrop",
+      "patterns": [
+        "How many types of Rice are grown in India?",
+        "What are the varieties of Rice in India?"
+      ],
+      "responses": [
+        "There are more than 50 different varieties of Rice grown in differt parts of India. Some of them are Basmati, Dubraj, Burma Black, Gandhsale, Gobindobhog,HMT Kolam, Jawaful, Kalabati, Laxmibhog, Mysore Mallige, Parmal. "
+      ]
+    },
+
+    {
+      "tag": "ChhatisgarhRice",
+      "patterns": [
+        "What is the best variety of rice that can be grown in Chhatisgarh?"
+      ],
+      "responses": [
+        "Dubraj is the best type of Rice that can be grown in Chhatisgarh."
+      ]
+    },
+
+    {
+      "tag": "KarnatakaRice",
+      "patterns": [
+        "What is the best variety of rice that can be grown in Karnataka?",
+        "What type of Rice can I grow in Karnataka?"
+      ],
+      "responses": [
+        "Rajamudi, Gandhsale, Burma Black is the best type of Rice that can be grown in Karnataka."
+      ]
+    },
+
+    {
+      "tag": "TypeOfDisease",
+      "patterns": [
+        "Why are leaves of my crop turning yellow?"
+      ],
+      "responses": [
+        "It can be because of lack of irrigaton."
+      ]
+    },
+
+    {
+      "tag": "WBRice",
+      "patterns": [
+        "What type of rice is the best to grow in West Bengal?"
+      ],
+      "responses": [
+        "Bhut Muri, Gobindobhog, Kamini, Laxmibhog are some of the rice that can be grown in West Bengal"
+      ]
+    },
+
+    {
+      "tag": "KharifCrops",
+      "patterns": [
+        "What are the Kharif crops grown in India?"
+      ],
+      "responses": [
+        "Rice, Maize, Jowar, Bajra, Tur (arhar), Moong, Urad, Cotton, Jute, Groundnut and Soyabean are the main crops grown in the Kharif season."
+      ]
+    },
+
+    {
+      "tag": "RabiCrops",
+      "patterns": [
+        "What are the Rabi crops grown in India?"
+      ],
+      "responses": [
+        "Wheat, Barley, Oats, Pulses, Mustard and Linseed are the main crops grown in Rabi season."
+      ]
+    },
+
+    {
+      "tag": "ZaidCrops",
+      "patterns": [
+        "What are the Zaid crops grown in India?"
+      ],
+      "responses": [
+        "Important crops produced during Zaid season are Watermelon, Muskmelon, Cucumber, Vegetables and Fodder crops."
+      ]
+    }
+
+
+  ]
+}
