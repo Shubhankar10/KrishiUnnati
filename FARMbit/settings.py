@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'weatherapp',
 
     'rosetta', # for translation
+    'pwa', # for progressive web app
 ]
 SITE_ID = 1
 

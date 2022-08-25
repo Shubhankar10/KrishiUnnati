@@ -27,4 +27,5 @@ urlpatterns = [
     path('',include('weatherapp.urls')),
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
     re_path(r'^rosetta/', include('rosetta.urls')),
+    path('', include('pwa.urls')),
 ]
