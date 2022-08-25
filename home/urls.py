@@ -15,7 +15,7 @@ urlpatterns = [
     path("login_user", login_user, name="login_user"),
     path("logout_user", logout_user, name="logout_user"),
     path('vr', voice, name='voice'),
-    path("profile1", profile1, name="profile1"),
-    path("profile2", profile2, name="profile2"),
+    path("profile1", profile, name="profile1"),
+    path("profile2", land_profile, name="profile2"),
 ]
 

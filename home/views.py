@@ -145,3 +145,59 @@ def voice(request):
          
                except sr.UnknownValueError:
                     print("unknown error occured")
+
+
+
+
+
+from .connection import *
+# Create your views here.
+def profile(request):
+    if request.method == 'POST':
+        con=sql_connection()
+        mycursor = con.cursor()
+        email = request.POST.get('email')
+        name = request.POST.get('name')
+        phonenumber = request.POST.get('phoneno')
+        town = request.POST.get('town')
+        district = request.POST.get('district')
+        state = request.POST.get('state')
+        country = request.POST.get('country')
+        pincode = request.POST.get('pincode')
+        aadhar = request.POST.get('Aadhar')
+        mycursor.execute("CREATE TABLE if not exists farmer_profile (email varchar(50) NOT NULL,name varchar(100) DEFAULT NULL,phonenumber varchar(12) DEFAULT NULL,town varchar(200) DEFAULT NULL,district varchar(100) DEFAULT NULL,state varchar(100) DEFAULT NULL,country varchar(100) DEFAULT NULL,pincode int DEFAULT NULL,aadhar varchar(12) DEFAULT NULL,PRIMARY KEY (email))")
+        mycursor.execute("CREATE TABLE if not exists farmer_land(email varchar(100) DEFAULT NULL,landarea float DEFAULT NULL,adress varchar(200) DEFAULT NULL,income int DEFAULT NULL,cropname varchar(200) DEFAULT NULL,grownfrom date DEFAULT NULL,grownuntill date DEFAULT NULL,KEY email (email),CONSTRAINT farmer_land_ibfk_1 FOREIGN KEY (email) REFERENCES farmer_profile (email))")
+        tables = mycursor.fetchall()
+
+        querry="insert into farmer_profile values(%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        data=[email,name,phonenumber,town,district,state,country,pincode,aadhar]
+        mycursor.execute(querry,data)
+        mycursor.close()
+        con.commit()
+
+        return render(request,'profile2.html')
+    else:
+        return render(request, 'profile1.html')
+
+def land_profile(request):
+    if request.method == 'POST':
+        con=sql_connection()
+        mycursor = con.cursor()
+        email = request.POST.get('ownername')
+        landarea = request.POST.get('landarea')
+        adress = request.POST.get('address')
+        income = request.POST.get('income')
+        cropname = request.POST.get('cropname')
+        grownfrom = request.POST.get('growStart')
+        grownuntill = request.POST.get('growUntil')
+
+
+        querry="insert into farmer_land values(%s,%s,%s,%s,%s,%s,%s)"
+        data=[email,landarea,adress,income,cropname,grownfrom,grownuntill]
+        mycursor.execute(querry,data)
+        mycursor.close()
+        con.commit()
+
+        return redirect(home)
+    else:
+        return render(request, 'profile2.html')    
