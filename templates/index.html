@@ -80,9 +80,9 @@
     </button> 
     
     <div class="content">
-      <div class="full-chat-block">
+      <div class="full-chat-block" id="full-chat">
           <!-- Message Container -->
-          <div class="outer-container">
+          <div class="outer-container" id="out-container">
               <div class="chat-container">
                   <!-- Messages -->
                   <div id="chatbox">
@@ -93,7 +93,13 @@
                     {{ user }}
                     </div>
                   </div>
-                  <br>
+                  <br> <div class="item">
+                    <div class="icon">
+                    </div>
+                    <div class="msg">
+                      {{ user_message }}
+                    </div>
+                  </div>
                   <div class="item">
                     <div class="icon">
                     </div>  

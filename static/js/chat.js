@@ -15,26 +15,8 @@ for (let i = 0; i < coll.length; i++) {
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
         }
-
     });
 }
-
-// function getTime() {
-//     let today = new Date();
-//     hours = today.getHours();
-//     minutes = today.getMinutes();
-
-//     if (hours < 10) {
-//         hours = "0" + hours;
-//     }
-
-//     if (minutes < 10) {
-//         minutes = "0" + minutes;
-//     }
-
-//     let time = hours + ":" + minutes;
-//     return time;
-// }
 
 
 
@@ -51,6 +33,15 @@ function firstBotMessage() {
 
 firstBotMessage();
 
+
+
+$(document).ready(function(){
+  $("#full_chat").click(function(){
+    $.ajax({url: "demo_text.txt", success: function(result){
+      $("#out-container").html(result);
+    }});
+  });
+});
 /*
 // Retrieves the response
 function getHardResponse(userText) {
@@ -106,7 +97,7 @@ function buttonSendText(sampleText) {
 
 function sendButton() {
     getResponse();
-   
+
 }
 
 function heartButton() {

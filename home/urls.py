@@ -5,8 +5,8 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    # path(' ', mainpage.as_view(), name="index"),
-    path('home', index, name="index"),
+    path(' ', mainpage.as_view(), name="index"),
+    # path('home', index, name="index"),
     path('home', home, name="home"),
     path('map', views.map, name='map'),
     # path('login', views.login, name='login'),
