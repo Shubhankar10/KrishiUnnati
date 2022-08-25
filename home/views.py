@@ -51,6 +51,9 @@ def profile1(request):
 def profile2(request):
     return render(request, 'profile2.html')
 
+def GovtScheme(request):
+    return render(request, 'GovtScheme.html')
+
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
