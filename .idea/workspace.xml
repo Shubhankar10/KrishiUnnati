@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="debf8a59-0328-45b4-ad50-a49d03bb46bc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/chatBackend/intents.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatBackend/intents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/MapData_JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/MapData_JS.js" afterDir="false" />
+    <list default="true" id="debf8a59-0328-45b4-ad50-a49d03bb46bc" name="Changes" comment="Now Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/KrishiUnnati.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KrishiUnnati.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,13 +22,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="KrishiUnnati" type="Python.DjangoServer" factoryName="Django server">
       <module name="KrishiUnnati" />
@@ -62,11 +62,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661428087603</updated>
-      <workItem from="1661428094287" duration="651000" />
+      <workItem from="1661428094287" duration="2552000" />
+      <workItem from="1661445832672" duration="1440000" />
     </task>
+    <task id="LOCAL-00001" summary="Now Commit">
+      <created>1661430147497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661430147497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Now Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now Commit" />
   </component>
 </project>
