@@ -1,0 +1,18 @@
+:root{
+    --element: #035C41;
+    --background: #FFF7EC;
+    user-select: none;
+}
+
+body{
+    background: #FFF7EC;
+    width: 100%;
+}
+
+
+
+#aboutus{
+    padding: 5% 10% 20%;
+   
+}
+
