@@ -1,4 +1,4 @@
-
+{% load i18n %}
 <html>
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,8 @@
     {% load static %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'Css/weather.css' %}">
-    <title>Weather</title>
+    <title>{% trans "Weather" %}</title>
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
 </head>
 <body>
 
@@ -37,8 +38,23 @@
         {% endif %}
 
     {% endfor %} {% endcomment %}
-
-    <h2>Weather Forecast</h2>
+    <div class="translate-inner">
+        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}">
+          <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+              {{ language.name_local }} ({{ language.code }})
+            </option>
+            {% endfor %}
+          </select>
+          <input type="submit" value="{% trans 'Go' %}">
+        </form> 
+      </div>
+    <h2>{% trans "Weather Forecast" %}</h2>
     <div class="weather-container">
         
         <div class="row" style="border-bottom: 0.2rem solid #035C41;">
@@ -52,11 +68,11 @@
             <div class="col-lg-2 col-md-6 col-sm-6" style="position:relative; top:30px;">
                 <ul style="list-style: none;">
                     <li><p>{{ responsedescription.0 }}</p></li>
-                    <li>humidity : {{ responsehumidity.0 }}</li>
+                    <li>{% trans "Humidity: " %}{{ responsehumidity.0 }}</li>
                 </ul>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
-                <a href="">Change city</a><br>
+                <a href="">{% trans "Change City" %}</a><br>
                 <h4>{{location}}</h4>
                 <p style="text-align:right; font-weight: 600;">Day</p>
             </div>

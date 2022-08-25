@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'imgupload',
     'weatherapp',
 
-    # 'rosetta', # for translation
+    'rosetta', # for translation
 ]
 SITE_ID = 1
 
@@ -143,6 +143,7 @@ gettext = lambda s: s
 LANGUAGES = (
     ('en-us', ('English')),
     ('hi', ('Hindi')),
+    ('kn', ('Kannada')),
 )
 
 LOCALE_PATHS = (

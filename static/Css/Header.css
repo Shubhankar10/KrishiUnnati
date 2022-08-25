@@ -3,6 +3,7 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
 
 
@@ -61,7 +62,7 @@ li{
 .login-signup ul li a{
     border-radius: 10px;
     color: rgb(252, 252, 252);
-    padding: 6px 17px;
+    padding: 6px 30px;
     background-color: var(--element);
     border: 1px rgb(2, 70, 10) solid;
     font-size: 1.2rem;

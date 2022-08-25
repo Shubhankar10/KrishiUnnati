@@ -1,6 +1,7 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
 
 .translate-inner{

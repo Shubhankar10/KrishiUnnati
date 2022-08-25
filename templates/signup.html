@@ -10,9 +10,29 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
-    <title>Sign in/Sign Up</title>
+    <title>{% trans "Sign In/Sign Up" %}</title>
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/voice.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/translate.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
   </head>
   <body>
+    <div class="translate-inner">
+      <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}">
+        <select name="language">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+          {% for language in languages %}
+          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+            {{ language.name_local }} ({{ language.code }})
+          </option>
+          {% endfor %}
+        </select>
+        <input type="submit" value="{% trans 'Go' %}">
+      </form> 
+    </div>
     <a href="/"><button class="back"><img src="{% static 'Images/Logos/BackArrow.png' %}" class="BackArrowImg"></button></a>
     <div class="container">
       <div class="forms-container">

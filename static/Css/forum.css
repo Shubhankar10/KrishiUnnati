@@ -1,9 +1,0 @@
-:root{
-    --element: #035C41;
-    --background: #FFF7EC;
-}
-
-.forum{
-    height: 100vh;
-    background-color: var(--background);
-}

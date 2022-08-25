@@ -6,7 +6,9 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
+
 
 *{
     margin: 0;
@@ -14,6 +16,7 @@
     box-sizing: border-box; 
     font-family: 'Raleway', sans-serif;
     /* font-size: 62.5%; */
+    user-select: none;
 }
 .main-home{
     background-color: var(--background);
@@ -37,7 +40,7 @@
     font-weight: 700;
     color: var(--element);
     position: relative;
-    right: 11px;
+    right: 17px;
 }
 
 .main-home .text-container p{
@@ -107,7 +110,7 @@
 
 .home-button .button1{
     position: relative;
-    width: 200px;
+    width: 220px;
     right: 150px;
     height: 50px;
     font-size: 1.5rem;

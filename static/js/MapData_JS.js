@@ -3,15 +3,15 @@ var simplemaps_countrymap_mapdata={
     //General settings
 		// width: "responsive", //or 'responsive'
     height:10,
-    background_color: "#ffffff",
+    background_color: "#FFF7EC",
     background_transparent: "yes",
-    border_color: "#eeedec",
+    border_color: "#FFF7EC",
     pop_ups: "detect",
     
 		//State defaults
-		state_description: "State description",
-    state_color: "#77a721",
-    state_hover_color: "#26360a",
+		state_description: "State details",
+    state_color: "#A77D53",
+    state_hover_color: "#644424",
     state_url: "default",
     border_size: 1.5,
     all_states_inactive: "no",
@@ -75,52 +75,52 @@ var simplemaps_countrymap_mapdata={
   state_specific: {
     "1": {
       name: "Andaman And Nicobar",
-      description: "default",
+      description: "Major Crops Grown: Rice, Coconut, Arecanut, Pulses, Oilseeds and Vegetables. Major type of Soil found: Clayey, Sandy and Loamy.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "2": {
       name: "Andhra Pradesh",
-      description: "default",
+      description: "Major Crops Grown: Rice, Cotton, Sunflower, Groundnut, Cashew Nuts, Black Gram, Sugarcane, Turmeric and Tobacco. Major type of Soil found: Black (Regur soil). ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "3": {
       name: "Arunachal Pradesh",
-      description: "default",
+      description: "Major Crops Grown: Rice, Millet, Wheat, Pulses, Sugarcane, Potatoes, Pineapple, Oranges, Banana, Apple, Peach, Plum, Tea and Coffee. Major type of Soil found: Alluvial. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "4": {
       name: "Assam",
-      description: "default",
+      description: "Major Crops Grown: Rice, Banana, Orange, Potato, Tomato, Lemon, Coconut, Arcanuts , Mango, Guava, Litchi, Pineapple, Papaya, Pear and Tea. Major type of Soil found: Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "5": {
       name: "Bihar",
-      description: "Bihar is a state in East India, bordering Nepal. It is divided by the River Ganges, which floods its fertile plains.",
+      description: "Major Crops Grown: Maize, Rice, Jute, Sugarcane, Barley, Mango, Litchi, Makhana, Guava, Lady’s Finger, Snow Pea, Onions, Tomato, Potato, Brinjal, Cauliflower, Cabbage, Radish, Carrot and Beat. Major type of Soil found: Alluvial.",
       color: "default",
       hover_color: "default",
-      url: "https://bihar.nic.in/"
+      url: "default"
     },
     "6": {
       name: "Chandigarh",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Rice, Cotton, Sugarcane, Pearl Millet, Maize, Barley and Bajra. Major type of Soil found: Alluvial, Saline and Alkaline.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "7": {
       name: "Chhattisgarh",
-      description: "Chhattisgarh is a heavily forested state in central India known for its temples and waterfalls.",
+      description: "Major Crops Grown: Rice, Maize, Gram, Tuar, Groundnuts, Soybeans, Mustard, Sunflowers, Karela, Louki, Turai, Munga, Parwal, Potato and Onion.  Major type of Soil found: Red. ",
       color: "default",
       hover_color: "default",
-      url: "https://chhattisgarh.nic.in/"
+      url: "default"
     },
     "8": {
       name: "Dadra And Nagar Haveli",
@@ -138,7 +138,7 @@ var simplemaps_countrymap_mapdata={
     },
     "10": {
       name: "Delhi",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Jawar, Bajra, Paddy, Cauliflower, Cabbage, Carrot, Spinach, Mustard (leaves), Okra and Tomato. Major type of Soil found: Alluvial and Loamy.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -152,98 +152,98 @@ var simplemaps_countrymap_mapdata={
     },
     "12": {
       name: "Gujarat",
-      description: "default",
+      description: "Major Crops Grown: Great Millet, Bajra, Maize, Paddy, Groundnut, Cotton, Wheat, Sesame, Mustard, Cumin, Rapeseed, Mustard, Castor, Onion, Banana, Chikoo, Guava, Cauliflower and Tobacco.  Major type of Soil found: Alluvial and Black( Regur Soil). ",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "https://github.com/"
     },
     "13": {
       name: "Haryana",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Rice, Maize, Bajra, Sugarcane, Groundnut, Chillies, Jowar, Pulses, Palak, Methi, Capsicum, Turnip and Coriander. Major type of Soil found: Alluvial, Saline and Alkaline.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "14": {
       name: "Himachal Pradesh",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Maize, Soyabean, Rice, Barley, Seed-Potato, Ginger, Capsicum, Mushrooms, Chicory Seeds, Olives, Fig, Apple, Pear(Soft), Cherry, Almond, Walnut, Chestnut, Hazelnut, Strawberry and Grapes. Major type of Soil found: Alluvial and Brown Forest. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "16": {
       name: "Jharkhand",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Sunflower, Pulses, Groundnut, Gram, Mustard, Moong, Pigeonpea, Tomato, Brinjal and Cauliflower. Major type of Soil found: Alluvial. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "17": {
       name: "Karnataka",
-      description: "default",
+      description: "Major Crops Grown: Rice, Sunflower, Silk, Coffee, Pepper, Maize, Jowar, Great Millet, Bajra, Green Gram, Groundnut, Sunflower, Cotton, Soybean, Chillies, Onion and Sugarcane. Major type of Soil found: Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "18": {
       name: "Kerala",
-      description: "default",
+      description: "Major Crops Grown: Rice, Ginger, Banana, Coconut, Silk, Coffee, Tea, Pepper, Cashew Nut, Pea, Tapioca, Rubber, Cardamom and Arecanut. Major type of Soil found: Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "19": {
       name: "Lakshadweep",
-      description: "default",
+      description: "Major Crops Grown: Coconut, Thenga (Cacos nucifera). Major type of Soil found: Clayey, Sandy and Loamy.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "20": {
       name: "Madhya Pradesh",
-      description: "default",
+      description: "Major Crops Grown: Soybean, Rice, Maize, Bajara, Tur, Masoor, Wheat, Gram, Mustard, Cotton, Jowar, Sugarcane, Custard Apple and Banana. Major type of Soil found: Black (Regur soil) and Laterite.",
       color: "default",
       hover_color: "default",
       url: "https://github.com/"
     },
     "21": {
       name: "Maharashtra",
-      description: "default",
+      description: "Major Crops Grown: Rice, Jowar, Arhar, Barley, Bajra, Sugarcane, Sunflower, Cotton, Soyabean, Groundnut, Tobacco, Lentil, Peas, Banana, Mango, Cashew and Guava. Major type of Soil found: Black (Regur soil). ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "22": {
       name: "Manipur",
-      description: "default",
+      description: "Major Crops Grown: Rice, Wheat, Maize, Pulses, Mango, JackFruit, Guava, Banana, Litchi, Papaya, Pears, Brinjal, Tomato, Chillies, Cabbage, Cauliflower and Capsicum. Major type of Soil found: Alluvial and Loamy.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "23": {
       name: "Meghalaya",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Oranges (Khasi Mandarin), Pineapple, Banana, Strawberry, Jackfruit, Plums, Peach, Pear, Turmeric, Ginger, Black Pepper and Arecanut. Major type of Soil found: Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "24": {
       name: "Mizoram",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Beans, Cucumber, Arum, Sesame, Mustard, Cotton, Sugarcane, Tapioca, Soybean, Pulses, Cowpea and French beans. Major type of Soil found: Loamy. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "25": {
       name: "Nagaland",
-      description: "default",
+      description: "Major Crops Grown: Rice, Pulses, Oilseeds, Potato, Sugarcane, Coffee, Tea, Cardamom, Carrot, Chillies, Onion, Melon, Spinach, Cucumber, Brinjal, Tomato, Mustard and Tobacco. Major type of Soil found: Red Loamy. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "26": {
-      name: "Orissa",
-      description: "default",
+      name: "Odisha",
+      description: "Major Crops Grown: Rice, Sugarcane, Maize, Jowar, Bajra, Turmeric, Mung, Gram, Cowpea, Lentil and Cotton. Major type of Soil found: Red and Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -257,77 +257,77 @@ var simplemaps_countrymap_mapdata={
     },
     "28": {
       name: "Punjab",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Rice, Cotton, Sugarcane, Pearl Millet, Maize, Barley and Bajra. Major type of Soil found: Alluvial, Saline and Alkaline.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "29": {
       name: "Rajasthan",
-      description: "default",
+      description: "Major Crops Grown: Barley, Wheat, Gram, Pulses, Oil Seeds, Rapeseed, Mustard, Bajra, Pulses, Jowar, Maize, Groundnut and Sesame. Major type of Soil found: Arid and Desert. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "30": {
       name: "Sikkim",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Finger Millet, Barley, Wheat, Pea, Soyabean, Mustard, Potato, Cardamom, Chilly, Turmeric, Coriander, Ginger, Gauva, Litchi, Orange, Tomato, Onion and Radish. Major type of Soil found: Loamy. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "31": {
       name: "Tamil Nadu",
-      description: "default",
+      description: "Major Crops Grown: Rice, Jowar, Groundnut, Cotton, Turmeric, Coconut, Sugarcane, Tapioca, Tea, Coffee, Pepper and Cashew Nuts. Major type of Soil found: Black (Regur soil) and Laterite. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "32": {
       name: "Tripura",
-      description: "default",
+      description: "Major Crops Grown: Rice, Ragi, Jowar, Maize, Pulses, Cashew, Coconut, Arecanut, Cardamom, Chillies, Cotton, Sugarcane, Tobacco, Pineapple, Oranges, Tea and Rubber. Major type of Soil found: Red and Yellow Soil. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "33": {
       name: "Uttar Pradesh",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Wheat, Barley, Sugarcane, Poppy, Linseed, Rapeseed, Mustard, Sesame, Ginger, Turmeric, Coriander, Pigeonpea, Moong, Sorghum and Lentil. Major type of Soil found: Alluvial.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "34": {
       name: "Uttaranchal",
-      description: "default",
+      description: "Major Crops Grown: Wheat, Pulses, Mustard, Groundnut, Jute, Sugarcane, Potato, Gram, Pea, Masoor, Rajma, Mustard, Soybean and Groundnut. Major type of Soil found: Alluvial and Brown Forest. ",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "35": {
       name: "West Bengal",
-      description: "default",
+      description: "Major Crops Grown: Rice, Wheat, Pulses, Mustard, Groundnut, Jute, Sugarcane, Jute, Potato, Brinjal, Tomato, Ladies Finger, Cucumber, Mango, Banana and Pineapple. Major type of Soil found: Saline and Alkaline.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "36": {
       name: "Jammu And Kashmir",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Wheat, Barley, Corn, Millet, Lentils, Cotton, Tobacco, Apple, Pear, Peach, Plum, Apricot, Cherry and Almonds. Major type of Soil found: Alluvial and Mountain soil.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "37": {
       name: "Telangana",
-      description: "default",
+      description: "Major Crops Grown: Rice, Maize, Pulses, Groundnut, Cotton, Chillies, Sugarcane, Tobacco, Turmeric, Orange, Mango, Cucumber, Tomato and Lemon. Major type of Soil found: Black (Regur soil).",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     "38": {
       name: "Ladakh",
-      description: "default",
+      description: "Major Crops Grown: Barley, Wheat, Mustard, Potato, Peas, Onion, Cabbage, Carrot, Cauliflower, Walnut, Apple and Apricot. Major type of Soil found: Alluvial and Mountain.",
       color: "default",
       hover_color: "default",
       url: "default"

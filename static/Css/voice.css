@@ -1,6 +1,7 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
 
 .voice{
@@ -12,13 +13,14 @@
 .voice .inside-container{
     position: relative;
     float: right;
-    top: 90vh;
+    top: 94vh;
     right:5%;
     /* z-index: 99; */
 }
 
 .voice .inside-container button{
-    padding:15px 15px;
+    padding-top: 10px;
+    padding:30px 30px;
     color: black;
     background-color: #644424;
     border-radius: 10px;
@@ -26,5 +28,7 @@
 }
 
 .voice .inside-container button i{
+    position: relative;
+    bottom: 20px;
    color: white;
 }

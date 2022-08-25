@@ -1,17 +1,43 @@
 
 <!DOCTYPE html>
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     {% load static %}
     {% comment %} <link rel="stylesheet" href="{% static 'Css/login.css' %}"> {% endcomment %}
-
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'Css/login.css' %}">
-    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'Css/voice.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/translate.css' %}">
+    <title>{% trans "Login" %}</title>
 </head>
 <body>
-
+    <div class="voice">
+        <div class="inside-container"> 
+          <form method='POST' action='vr'>
+            {% csrf_token %}
+            <button type='submit' name='vr2' onclick="overlay_on()"><i class="fa-solid fa-microphone"></i></button>
+          </form>
+        </div>
+      </div>
+    <div class="translate-inner">
+        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}">
+          <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+              {{ language.name_local }} ({{ language.code }})
+            </option>
+            {% endfor %}
+          </select>
+          <input type="submit" value="{% trans 'Go' %}">
+        </form> 
+      </div>
     <div class="signup-details">
         <div class="left-box">
             <div class="arrow-icon">
@@ -22,14 +48,13 @@
             </div>
         </div>
         <div class="container-fluid">
-            <p style="text-align: right; margin-top: 15px;"> New user? <a href="/register" style="color:black;">Sign in here</a></p>
+            <p style="text-align: right; margin-top: 15px;"> {% trans "New User?" %} <a href="/register" style="color:black;">{% trans "Sign in here" %}</a></p>
             <p style="text-align: right; margin-top: 15px;"></p>
             <div class="login-container">
-            <h3 style="font-weight:bold;">Login</h3>
+            <h3 style="font-weight:bold;">{% trans "Login" %}</h3>
             
             <div class="row" style="padding-top: 30px;">
-                <div class="col"><a href="" class="login-button">Google</a></div>
-                <div class="col"><a href="" class="login-button">Aadhar</a></div>
+                <div class="col"><a href="" class="login-button">{% trans "Google" %}</a></div>
             </div>
             <br>
             <div class="row">
@@ -40,17 +65,17 @@
             <form action="{% url 'login_user' %}" method="POST" class="col g-3">
                 {% csrf_token %}
                 <div class="col-md-6 form-group">
-                    <label for="inputEmail4" class="label">Email/Phone Number</label>
+                    <label for="inputEmail4" class="label">{% trans "Email/Phone Number" %}</label>
                     <input name="email" type="" class="form-control input" id="">
                 </div>
         
                 <div class="col-md-6 form-group">
-                    <label for="inputPassword4" class="label">Password</label>
+                    <label for="inputPassword4" class="label">{% trans "Password" %}</label>
                     <input name="password" type="password" class="form-control input" id="inputPassword4">
                 </div>
         
                 <div class="col-12">
-                    <button type="submit" class="submit-button">Login</button>
+                    <button type="submit" class="submit-button">{% trans "Login" %}</button>
                 </div>
             </form>
 

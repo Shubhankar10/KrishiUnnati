@@ -1,10 +1,11 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
 
 .others{
-    height: 280vh;
+    height: 300vh;
     background-color: var(--background);
 }
 
@@ -23,14 +24,15 @@
     align-items: center;
 
 }
-/* .database-fig-left h1{
+ .database-fig-left h1{
+    position: relative;
     line-height: -2px;
     font-size: 3rem;
-} */
+} 
 
 .database-fig-left p{
     position: relative;
-    left: 50px;
+    left: 60px;
     width: 400px;
     font-size: 1.5rem;
 }
@@ -116,3 +118,6 @@
     font-size: 1.5rem;
 }
 
+hr{
+    border-color: #035C41; 
+}

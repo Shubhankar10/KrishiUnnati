@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 17:51+0530\n"
-"PO-Revision-Date: 2022-08-21 17:59+0000\n"
+"POT-Creation-Date: 2022-08-25 15:28+0530\n"
+"PO-Revision-Date: 2022-08-25 15:30+0000\n"
 "Last-Translator: admin User <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,68 +27,564 @@ msgstr "आपको एक ईमेल पता प्रदान करन�
 msgid "email address"
 msgstr "ईमेल पता"
 
-#: .\templates\index.html:37
+#: .\templates\Map.html:6
+#, fuzzy
+#| msgid "Agricultural Map of India"
+msgid "Indian Agricultural Map"
+msgstr "भारत का कृषि मानचित्र"
+
+#: .\templates\Navbar.html:36 .\templates\Plant.html:42
+#: .\templates\details.html:36 .\templates\index.html:61
+#: .\templates\login.html:39 .\templates\profile1.html:40
+#: .\templates\profile2.html:40 .\templates\register.html:40
+#: .\templates\result.html:41 .\templates\signup.html:30
+#: .\templates\wresult.html:55
 msgid "Go"
 msgstr "आगे बढ़ो"
 
-#: .\templates\index.html:46
-msgid "Home"
-msgstr "होम पेज"
-
-#: .\templates\index.html:47 .\templates\index.html:136
+#: .\templates\Plant.html:18 .\templates\Plant.html:100
+#: .\templates\Plant.html:158 .\templates\index.html:131
+#: .\templates\index.html:182 .\templates\index.html:312
+#: .\templates\result.html:206
 msgid "Plant Identification"
 msgstr "पौधे की पहचान"
 
-#: .\templates\index.html:48
-msgid "Governement Scheme"
-msgstr "सरकारी योजना"
+#: .\templates\Plant.html:76 .\templates\index.html:130
+#: .\templates\profile1.html:74 .\templates\profile2.html:74
+#: .\templates\result.html:75
+msgid "Home"
+msgstr "होम पेज"
 
-#: .\templates\index.html:49
-msgid "Map"
-msgstr "नक्शा"
+#: .\templates\Plant.html:77 .\templates\profile1.html:13
+#: .\templates\profile1.html:75 .\templates\profile1.html:96
+#: .\templates\profile2.html:16 .\templates\profile2.html:75
+#: .\templates\profile2.html:96 .\templates\result.html:76
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
 
-#: .\templates\index.html:105
-msgid "Login"
-msgstr "लॉग इन"
+#: .\templates\Plant.html:78 .\templates\profile1.html:76
+#: .\templates\profile2.html:76 .\templates\result.html:77
+msgid "Plant ID"
+msgstr "पौधा पहचान"
 
-#: .\templates\index.html:106
-msgid "SignUp"
-msgstr "साइन अप"
-
-#: .\templates\index.html:113
-msgid "Krishi Unnati"
-msgstr "कृषि उन्नति"
-
-#: .\templates\index.html:115
-msgid "Add Text here"
-msgstr "यहां टेक्स्ट जोड़ें"
-
-#: .\templates\index.html:119 .\templates\index.html:141
-msgid "Button 1"
-msgstr "बटन 1"
-
-#: .\templates\index.html:122
-msgid "Button 2"
-msgstr "बटन 2"
-
-#: .\templates\index.html:138 .\templates\index.html:152
-#: .\templates\index.html:168 .\templates\index.html:183
-#: .\templates\index.html:193
-msgid "Add text here"
-msgstr "यहां टेक्स्ट जोड़ें"
-
-#: .\templates\index.html:150
-msgid "Adgriculture Map of India"
-msgstr "भारत का कृषि मानचित्र"
-
-#: .\templates\index.html:166
-msgid "Database Figure"
-msgstr "डेटाबेस चित्र"
-
-#: .\templates\index.html:181
+#: .\templates\Plant.html:79 .\templates\Plant.html:161
+#: .\templates\index.html:315 .\templates\profile1.html:77
+#: .\templates\profile2.html:77 .\templates\result.html:78
+#: .\templates\result.html:209
 msgid "Weather Prediction"
 msgstr "मौसम की भविष्यवाणी"
 
-#: .\templates\index.html:191
-msgid "Governement Schemes"
+#: .\templates\Plant.html:80 .\templates\index.html:132
+#: .\templates\profile1.html:78 .\templates\profile2.html:78
+#: .\templates\result.html:79
+msgid "Government Schemes"
 msgstr "सरकारी योजनाएं"
+
+#: .\templates\Plant.html:81 .\templates\index.html:133
+#: .\templates\profile1.html:79 .\templates\profile2.html:79
+#: .\templates\result.html:80
+msgid "Map"
+msgstr "नक्शा"
+
+#: .\templates\Plant.html:82 .\templates\Plant.html:159
+#: .\templates\index.html:260 .\templates\index.html:269
+#: .\templates\index.html:313 .\templates\profile1.html:80
+#: .\templates\profile2.html:80 .\templates\result.html:81
+#: .\templates\result.html:207
+msgid "Forum"
+msgstr "चर्चा मंच"
+
+#: .\templates\Plant.html:87 .\templates\Plant.html:149
+#: .\templates\index.html:165 .\templates\index.html:303
+#: .\templates\profile1.html:85 .\templates\profile2.html:85
+#: .\templates\result.html:86 .\templates\result.html:197
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+#: .\templates\Plant.html:88 .\templates\Plant.html:150
+#: .\templates\index.html:304 .\templates\profile1.html:86
+#: .\templates\profile2.html:86 .\templates\result.html:87
+#: .\templates\result.html:198
+msgid "Contact Us"
+msgstr "संपर्क करें"
+
+#: .\templates\Plant.html:89 .\templates\profile1.html:87
+#: .\templates\profile2.html:87 .\templates\result.html:88
+msgid "Logout"
+msgstr "लॉग आउट"
+
+#: .\templates\Plant.html:102
+msgid "Check if your plant is healthy and find solutions to diseases if any"
+msgstr "जांचें कि आपकी फसल स्वस्थ है या नहीं और फसल रोगों का इलाज खोजें "
+
+#: .\templates\Plant.html:105
+msgid "Details"
+msgstr "विवरण"
+
+#: .\templates\Plant.html:108
+msgid "Click a clear picture of the plant"
+msgstr "पौधे की स्पष्ट तस्वीर को क्लिक करें"
+
+#: .\templates\Plant.html:109
+msgid "Upload the picture using the upload button"
+msgstr "अपलोड बटन का उपयोग करके चित्र अपलोड करें"
+
+#: .\templates\Plant.html:110 .\templates\Plant.html:112
+msgid "Once uploaded, following details will be shown:"
+msgstr "एक बार अपलोड करने के बाद, निम्नलिखित विवरण दिखाया जाएगा:"
+
+#: .\templates\Plant.html:113
+msgid "Possible Diseases"
+msgstr "संभावित रोग"
+
+#: .\templates\Plant.html:114
+msgid "Cure for the disease"
+msgstr "बीमारी का इलाज"
+
+#: .\templates\Plant.html:147 .\templates\index.html:301
+#: .\templates\result.html:195
+msgid "About"
+msgstr "हमारे बारे में"
+
+#: .\templates\Plant.html:151 .\templates\index.html:305
+#: .\templates\result.html:199
+msgid "SIH 2022"
+msgstr "एसआईएच 2022"
+
+#: .\templates\Plant.html:156 .\templates\index.html:282
+#: .\templates\index.html:310 .\templates\result.html:204
+msgid "Services"
+msgstr "सेवाएं"
+
+#: .\templates\Plant.html:160 .\templates\index.html:314
+#: .\templates\result.html:208
+msgid "Voice Assistant"
+msgstr "आवाज सहायक"
+
+#: .\templates\Plant.html:162 .\templates\index.html:316
+#: .\templates\result.html:210
+msgid "Database Analysis"
+msgstr "डेटाबेस चित्र"
+
+#: .\templates\Plant.html:163 .\templates\index.html:317
+#: .\templates\result.html:211
+msgid "Government Scheme"
+msgstr "सरकारी योजना"
+
+#: .\templates\Plant.html:168 .\templates\index.html:322
+#: .\templates\result.html:216
+msgid "Support"
+msgstr "सहायता"
+
+#: .\templates\Plant.html:170 .\templates\index.html:324
+#: .\templates\result.html:218
+msgid "Whatsapp"
+msgstr "Whatsapp"
+
+#: .\templates\Plant.html:171 .\templates\index.html:325
+#: .\templates\result.html:219
+msgid "Call"
+msgstr "हमें कॉल करें"
+
+#: .\templates\Plant.html:172 .\templates\index.html:326
+#: .\templates\result.html:220
+msgid "SMS"
+msgstr "एसएमएस"
+
+#: .\templates\Plant.html:177 .\templates\index.html:331
+#: .\templates\result.html:225
+msgid "Socials"
+msgstr "सामाजिक"
+
+#: .\templates\Plant.html:179 .\templates\index.html:333
+#: .\templates\result.html:227
+msgid "LinkedIn"
+msgstr "लिंक्डइन"
+
+#: .\templates\Plant.html:180 .\templates\index.html:334
+#: .\templates\result.html:228
+msgid "Twitter"
+msgstr "ट्विटर"
+
+#: .\templates\Plant.html:181 .\templates\index.html:335
+#: .\templates\result.html:229
+msgid "Instagram"
+msgstr "इंस्टा"
+
+#: .\templates\Plant.html:191 .\templates\index.html:345
+#: .\templates\result.html:239
+msgid "Team FARMbit"
+msgstr "टीम FARMbit"
+
+#: .\templates\details.html:10
+#, fuzzy
+#| msgid "Details"
+msgid "Details Form"
+msgstr "विवरण"
+
+#: .\templates\details.html:41
+#, fuzzy
+#| msgid "Details"
+msgid "Account Details"
+msgstr "विवरण"
+
+#: .\templates\details.html:46 .\templates\register.html:70
+msgid "Full Name"
+msgstr "पूरा नाम"
+
+#: .\templates\details.html:51
+#, fuzzy
+#| msgid "Phone Number"
+msgid "Mobile Number"
+msgstr "ईमेल/फोन नंबर"
+
+#: .\templates\details.html:57
+msgid "Male"
+msgstr "पुरुष"
+
+#: .\templates\details.html:58
+msgid "Female"
+msgstr "मादा"
+
+#: .\templates\details.html:59
+msgid "Other"
+msgstr "अन्य"
+
+#: .\templates\details.html:66 .\templates\profile2.html:111
+msgid "Address"
+msgstr "ईमेल पता"
+
+#: .\templates\details.html:71 .\templates\profile1.html:143
+msgid "Country"
+msgstr "देश"
+
+#: .\templates\details.html:77
+#, fuzzy
+#| msgid "Already a user?"
+msgid "Already a member?"
+msgstr "पहले से ही एक उपयोगकर्ता?"
+
+#: .\templates\details.html:77
+msgid "Log In"
+msgstr "लॉग इन करें"
+
+#: .\templates\index.html:9 .\templates\index.html:156
+msgid "Krishi Unnati"
+msgstr "कृषि उन्नति"
+
+#: .\templates\index.html:33
+msgid "Speak Now"
+msgstr "अब बोलो"
+
+#: .\templates\index.html:70
+#, fuzzy
+#| msgid "Profile"
+msgid "Profile Page"
+msgstr "प्रोफ़ाइल"
+
+#: .\templates\index.html:77
+msgid "Chat with us!"
+msgstr "हम से बात करे!"
+
+#: .\templates\index.html:108
+msgid "Send"
+msgstr "भेजना"
+
+#: .\templates\index.html:146 .\templates\login.html:15
+#: .\templates\login.html:55 .\templates\login.html:79
+msgid "Login"
+msgstr "लॉग इन"
+
+#: .\templates\index.html:147
+msgid "SignUp"
+msgstr "साइन अप"
+
+#: .\templates\index.html:158
+msgid "एक कदम सफल कृषि की ओर"
+msgstr ""
+
+#: .\templates\index.html:184
+msgid "Check if your crop is healthy and find cures for crop diseases."
+msgstr "जांचें कि आपकी फसल स्वस्थ है या नहीं और फसल रोगों का इलाज खोजें।"
+
+#: .\templates\index.html:187
+msgid "Diagnose your plant"
+msgstr "अपने पौधे का निदान करें"
+
+#: .\templates\index.html:196
+msgid "Agricultural Map of India"
+msgstr "भारत का कृषि मानचित्र"
+
+#: .\templates\index.html:197
+msgid ""
+"Get detailed information of the agricultural sector of India. Hover on the "
+"map to find state-wise agricultural details"
+msgstr ""
+"भारत के कृषि क्षेत्र की विस्तृत जानकारी प्राप्त करें।राज्यवार कृषि विवरण "
+"प्राप्त करने के लिएमानचित्र पर होवर करें"
+
+#: .\templates\index.html:213
+msgid "Local Center"
+msgstr "स्थानीय केंद्र"
+
+#: .\templates\index.html:213
+msgid "Information"
+msgstr "जानकारी"
+
+#: .\templates\index.html:216
+msgid "Contact information for the local soil testing centers"
+msgstr "स्थानीय मृदा परीक्षण केंद्रों के लिए संपर्क जानकारी"
+
+#: .\templates\index.html:233 .\templates\wresult.html:58
+msgid "Weather Forecast"
+msgstr "मौसम की भविष्यवाणी"
+
+#: .\templates\index.html:235
+msgid "Find out the weather forecast for the upcoming days."
+msgstr "आने वाले दिनों के लिए मौसम के पूर्वानुमान का पता लगाएं।"
+
+#: .\templates\index.html:243
+msgid "Government"
+msgstr "सरकारी योजना"
+
+#: .\templates\index.html:243
+msgid "Schemes"
+msgstr "योजनाओं"
+
+#: .\templates\index.html:245
+msgid "Discover all about the Government Schemes beneficial for the farmers"
+msgstr "किसानों के लिए लाभकारी सरकारी योजनाओं के बारे में जानें"
+
+#: .\templates\index.html:261
+msgid "Connect. Share. Grow."
+msgstr "जुडिये। शेयर करना। बढ़ना।"
+
+#: .\templates\index.html:262
+msgid "Use our Forum to recieve and offer help on any farming queries."
+msgstr ""
+"कृषि संबंधी किसी भी प्रश्न को प्राप्त करने और सहायता प्रदान करने के लिए "
+"हमारे फोरम का उपयोग करें।"
+
+#: .\templates\index.html:264
+msgid "Get to know about nearby renting/ on-sale farm products"
+msgstr "आस-पास के किराये/ बिक्री पर कृषि उत्पादों के बारे में जानें"
+
+#: .\templates\index.html:270
+msgid "Ask Experts"
+msgstr "विशेषज्ञों से पूछें"
+
+#: .\templates\index.html:271
+msgid "Rent/Sell"
+msgstr "किराया/बेचना"
+
+#: .\templates\login.html:52
+msgid "New User?"
+msgstr "नया उपयोगकर्ता?"
+
+#: .\templates\login.html:52 .\templates\register.html:53
+msgid "Sign in here"
+msgstr "यहां साइन इन करो"
+
+#: .\templates\login.html:58 .\templates\register.html:57
+msgid "Google"
+msgstr "गूगल"
+
+#: .\templates\login.html:69
+msgid "Email/Phone Number"
+msgstr "ईमेल/फोन नंबर"
+
+#: .\templates\login.html:74 .\templates\register.html:81
+msgid "Password"
+msgstr "पासवर्ड"
+
+#: .\templates\profile1.html:97 .\templates\profile2.html:97
+msgid "Farm Details"
+msgstr "विवरण"
+
+#: .\templates\profile1.html:106
+msgid "Name"
+msgstr "नाम"
+
+#: .\templates\profile1.html:115 .\templates\register.html:76
+msgid "Email"
+msgstr "ईमेल"
+
+#: .\templates\profile1.html:119
+msgid "Phone Number"
+msgstr "ईमेल/फोन नंबर"
+
+#: .\templates\profile1.html:123
+msgid "Aadhar Card Number"
+msgstr "आधार कार्ड नंबर"
+
+#: .\templates\profile1.html:127
+msgid "Town/Village"
+msgstr "शहर/गांव"
+
+#: .\templates\profile1.html:131
+msgid "District"
+msgstr "ज़िला"
+
+#: .\templates\profile1.html:135
+msgid "Pin Code"
+msgstr "पिन कोड"
+
+#: .\templates\profile1.html:139
+msgid "State"
+msgstr "राज्य"
+
+#: .\templates\profile2.html:103
+msgid "Owner Name"
+msgstr "मालिक का नाम"
+
+#: .\templates\profile2.html:107
+msgid "Land Area"
+msgstr "भूमि क्षेत्रफल"
+
+#: .\templates\profile2.html:115
+msgid "Income (Approx)"
+msgstr "आय (लगभग)"
+
+#: .\templates\profile2.html:121
+msgid "Name of Crop"
+msgstr "फसल का नाम"
+
+#: .\templates\profile2.html:125
+msgid "Grown From"
+msgstr "कब से उगा"
+
+#: .\templates\profile2.html:129
+msgid "Grown Until"
+msgstr "तब तक बढ़ा"
+
+#: .\templates\register.html:16 .\templates\register.html:55
+msgid "Sign Up"
+msgstr "साइन अप"
+
+#: .\templates\register.html:53
+msgid "Already a user?"
+msgstr "पहले से ही एक उपयोगकर्ता?"
+
+#: .\templates\register.html:62
+msgid "or"
+msgstr "या"
+
+#: .\templates\register.html:86
+msgid "Confirm Password"
+msgstr "पासवर्ड"
+
+#: .\templates\register.html:91
+msgid "Create Account"
+msgstr "खाता बनाएं"
+
+#: .\templates\result.html:17
+#, fuzzy
+#| msgid "Plant ID"
+msgid "PlantId"
+msgstr "पौधा पहचान"
+
+#: .\templates\result.html:97
+msgid "Possible Outcomes"
+msgstr "संभावित रोग"
+
+#: .\templates\result.html:98
+msgid "Found Match"
+msgstr "मिला मैच"
+
+#: .\templates\result.html:107
+msgid "Description"
+msgstr "विवरण"
+
+#: .\templates\result.html:111 .\templates\result.html:149
+#: .\templates\result.html:159 .\templates\result.html:169
+msgid "Common Name: "
+msgstr "साधारण नाम: "
+
+#: .\templates\result.html:118 .\templates\result.html:162
+#: .\templates\result.html:172
+msgid "More details"
+msgstr "विवरण"
+
+#: .\templates\result.html:124
+msgid "Kingdom: "
+msgstr "साम्राज्य: "
+
+#: .\templates\result.html:125
+msgid "Phylum: "
+msgstr "संघ: "
+
+#: .\templates\result.html:126
+msgid "Class: "
+msgstr "कक्षा: "
+
+#: .\templates\result.html:127
+msgid "Orders: "
+msgstr "फसल क्रम: "
+
+#: .\templates\result.html:128
+msgid "Family: "
+msgstr "परिवार: "
+
+#: .\templates\result.html:129
+msgid "Genus: "
+msgstr "जीनस: "
+
+#: .\templates\result.html:137
+msgid "Possible Disease"
+msgstr "संभावित रोग"
+
+#: .\templates\result.html:150 .\templates\result.html:160
+#: .\templates\result.html:170
+msgid "Description: "
+msgstr "विवरण: "
+
+#: .\templates\result.html:152
+msgid "More details: "
+msgstr "अधिक जानकारी: "
+
+#: .\templates\result.html:181
+msgid "Didn't find what you were looking for?"
+msgstr "आप जो खोज रहे थे वह नहीं मिला?"
+
+#: .\templates\result.html:182
+msgid "Upload Another Image"
+msgstr "एक और छवि अपलोड करें"
+
+#: .\templates\signup.html:13
+#, fuzzy
+#| msgid "Sign Up"
+msgid "Sign In/Sign Up"
+msgstr "साइन अप"
+
+#: .\templates\weather.html:7
+msgid "Cityname: "
+msgstr "शहर का नाम: "
+
+#: .\templates\wresult.html:11
+#, fuzzy
+#| msgid "Weather Forecast"
+msgid "Weather"
+msgstr "मौसम की भविष्यवाणी"
+
+#: .\templates\wresult.html:72
+msgid "Humidity: "
+msgstr "नमी: "
+
+#: .\templates\wresult.html:76
+msgid "Change City"
+msgstr "शहर बदलें"
+
+#~ msgid "Username"
+#~ msgstr "उपयोगकर्ता नाम: "
+
+#~ msgid "Add Text here"
+#~ msgstr "यहां टेक्स्ट जोड़ें"
+
+#~ msgid "Button 1"
+#~ msgstr "बटन 1"
+
+#~ msgid "Button 2"
+#~ msgstr "बटन 2"
+
+#~ msgid "Add text here"
+#~ msgstr "यहां टेक्स्ट जोड़ें"

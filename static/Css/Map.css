@@ -1,5 +1,6 @@
 :root{
     --map-background: #DBD0BE;
+    user-select: none;
 }
 
 

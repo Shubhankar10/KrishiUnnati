@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,9 +10,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'Css/Navbar.css' %}">
     <link rel="stylesheet" href="{% static 'Css/profile.css' %}">
-    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'Css/voice.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/translate.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
+    <title>{% trans "Profile" %}</title>
 </head>
 <body>
+    <div class="voice">
+        <div class="inside-container"> 
+          <form method='POST' action='vr'>
+            {% csrf_token %}
+            <button type='submit' name='vr2' onclick="overlay_on()"><i class="fa-solid fa-microphone"></i></button>
+          </form>
+        </div>
+      </div>
+    <div class="translate-inner">
+        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}">
+          <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+              {{ language.name_local }} ({{ language.code }})
+            </option>
+            {% endfor %}
+          </select>
+          <input type="submit" value="{% trans 'Go' %}">
+        </form> 
+      </div>
     <div class="wrapper">
         <div class="section">
      <div class="top_navbar">
@@ -42,63 +70,63 @@
                        </div>
                   </div>
                   <div class="menu">
-                       <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="/profile1">Profile</a></li>
-                            <li><a href="/imgupload">Plant ID</a></li>
-                            <li><a href="/weather">Weather Prediction</a></li>
-                            <li><a href="#">Government Scheme</a></li>
-                            <li><a href="/map">Map</a></li>
-                            <li><a href="#">Forum</a></li>
-                       </ul>
-                  </div>
-                  <div class="background1">
-                       <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Logout</a></li>
-                       </ul>
-                  </div>
+                    <ul>
+                         <li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>
+                         <li><a href="/profile1">{% trans "Profile" %}</a></li>
+                         <li><a href="/imgupload">{% trans "Plant ID" %}</a></li>
+                         <li><a href="/weather">{% trans "Weather Prediction" %}</a></li>
+                         <li><a href="#">{% trans "Government Schemes" %}</a></li>
+                         <li><a href="/map">{% trans "Map" %}</a></li>
+                         <li><a href="#">{% trans "Forum" %}</a></li>
+                    </ul>
+               </div>
+               <div class="background1">
+                    <ul>
+                         <li><a href="#">{% trans "About Us" %}</a></li>
+                         <li><a href="#">{% trans "Contact Us" %}</a></li>
+                         <li><a href="#">{% trans "Logout" %}</a></li>
+                    </ul>
+               </div>
            </div>
        </div>
      </div>
      
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3"><a href="/profile1"><img src="{% static 'Images/leaf.png' %}" /> Profile</a></div>
-            <div class="col-3"><a href="#"><img src="{% static 'Images/leaf.png' %}" /> Farm Details</a></div>
+            <div class="col-3"><a href="/profile1"><img src="{% static 'Images/leaf.png' %}" /> {% trans "Profile" %}</a></div>
+            <div class="col-3"><a href="#"><img src="{% static 'Images/leaf.png' %}" /> {% trans "Farm Details" %}</a></div>
         </div><hr>
         
         <form>
             <div class="row">
                 <div class="col-8">
-                    <label class="form-label">Owner Name</label>
+                    <label class="form-label">{% trans "Owner Name" %}</label>
                     <input name="ownername" type="text" class="form-control" >
                 </div>
                 <div class="col-4">
-                    <label class="form-label">Land Area</label>
+                    <label class="form-label">{% trans "Land Area" %}</label>
                     <input name="landarea" type="number" class="form-control" >
                 </div>
                 <div class="col-12">
-                    <label class="form-label">Address</label>
+                    <label class="form-label">{% trans "Address" %}</label>
                     <input name="address" type="text" class="form-control" style="height: 200px;">
                 </div>
                 <div class="col-4">
-                    <label class="form-label">Income/annum</label>
+                    <label class="form-label">{% trans "Income (Approx)" %}</label>
                     <input name="income" type="number" class="form-control" >
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <label class="form-label">Name of Crop</label>
+                    <label class="form-label">{% trans "Name of Crop" %}</label>
                     <input name="cropname" type="text" class="form-control" >
                 </div>
                 <div class="col-4">
-                    <label class="form-label">Grown from</label>
+                    <label class="form-label">{% trans "Grown From" %}</label>
                     <input name="growStart" type="date" class="form-control" >
                 </div>
                 <div class="col-4">
-                    <label class="form-label">Grown Until</label>
+                    <label class="form-label">{% trans "Grown Until" %}</label>
                     <input name="growUntil" type="date" class="form-control" >
                 </div>
             </div>

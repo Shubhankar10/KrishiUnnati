@@ -20,8 +20,8 @@ class mainpage(TemplateView):
 
     def post(self, request):
         if request.method == 'POST':
-            user = request.POST.get('input', False)
-            context = {"user": user, "bot": chat(request)}
+            user_message = request.POST.get('input', False)
+            context = {"user_message": user_message, "bot": chat(request)}
 
         return render(request, self.Template_view, context)
 
@@ -130,6 +130,8 @@ def voice(request):
                               return redirect('login_user')
                          elif(MyText.find('sign up') != -1):
                               return redirect('register')
+                         elif(MyText.find('home') != -1):
+                              return redirect('home')
                          elif(MyText.find('map') != -1 or MyText.find('naksha') !=-1):
                               return redirect('map')
                          elif(MyText.find('akshat') != -1 or MyText.find('sanskar') !=-1):

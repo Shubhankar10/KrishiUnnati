@@ -2,12 +2,13 @@
     --element: #035C41;
     --background: #FFF7EC;
     --forum-background:#A77D53;
+    user-select: none;
 }
 
 .forum-container{
     height: 70vh;
     background-color: #DBD0BE;
-    position: relative;
+
 }
 
 .forum-fig{
@@ -76,9 +77,12 @@
     width: 600px;
     background-color: #644424;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
+  .tabs a{
+    color: white;
+  }
 
 .tabs{
     text-align: center;

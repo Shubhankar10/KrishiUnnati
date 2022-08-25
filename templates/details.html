@@ -4,50 +4,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>details Form</title>
+    <link rel="stylesheet" href="{% static 'Css/voice.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/translate.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/voice-overlay.css' %}">
+    <title>{% trans "Details Form" %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'login.css' %}">
   </head>
   <body>
+    <div class="voice">
+      <div class="inside-container"> 
+        <form method='POST' action='vr'>
+          {% csrf_token %}
+          <button type='submit' name='vr2' onclick="overlay_on()"><i class="fa-solid fa-microphone"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="translate-inner">
+      <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}">
+        <select name="language">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+          {% for language in languages %}
+          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+            {{ language.name_local }} ({{ language.code }})
+          </option>
+          {% endfor %}
+        </select>
+        <input type="submit" value="{% trans 'Go' %}">
+      </form> 
+    </div>
     <div class="center">
 <!-- details form -->
-      <h1>Account Details</h1>
+      <h1>{% trans "Account Details" %}</h1>
       <form method="post">
         <div class="txt_field">
           <input type="text" required>
           <span></span>
-          <label>Full Name</label>
+          <label>{% trans "Full Name" %}</label>
         </div>
         <div class="txt_field">
           <input type="text" required>
           <span></span>
-          <label>Mobile Number</label>
+          <label>{% trans "Mobile Number" %}</label>
         </div>
        
         <div class="txt_field">
           <p>Gender
           <select id="gender" name="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
+            <option value="Male">{% trans "Male" %}</option>
+            <option value="Female">{% trans "Female" %}</option>
+            <option value="Other">{% trans "Other" %}</option>
             
            </select></p><br>
         </div>
         <div class="txt_field">
           <input type="text" required>
           <span></span>
-          <label>Address</label>
+          <label>{% trans "Address" %}</label>
         </div>
         <div class="txt_field">
           <input type="text" required>
           <span></span>
-          <label>Country</label>
+          <label>{% trans "Country" %}</label>
         </div>
         <input type="submit" value="Sign Up as Customer"><br><br>
         <input type="submit" value="Sign up as Seller">
         
         <div class="signup_link">
-          Already a member? <a href="/login" target="_self">Log In</a>
+          {% trans "Already a member?" %} <a href="/login" target="_self">{% trans "Log In" %}</a>
         </div>
        
       </form>

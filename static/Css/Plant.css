@@ -1,6 +1,7 @@
 :root{
     --element: #035C41;
     --background: #FFF7EC;
+    user-select: none;
 }
 
 .main-container-plant{
@@ -24,16 +25,16 @@
     font-size: 3rem;
     font-weight: 700;
     color: var(--element);
+    text-align: center;
 }
 
 .right-container p{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    width: 500px;   
+    width: 400px;   
     color: var(--element);
     bottom: 90px;
-    left: 2rem;
 }
 
 
