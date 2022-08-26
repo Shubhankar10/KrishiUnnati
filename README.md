@@ -17,7 +17,6 @@
 - [UI/UX design](#ui/ux-design-)
 - [Built With](#built-with-)
 - [Contributors](#contributors-)
-- [About SIH](#about-sih-)
 
 ## Problem Statement
 
