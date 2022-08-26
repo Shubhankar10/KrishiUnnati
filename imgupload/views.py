@@ -128,15 +128,17 @@ def handel_uploaded_file(f):
 def report(request):
     con=sql_connection()
     mycursor = con.cursor()
-    querry="select d1,count(d1) from plant where uploaddate BETWEEN (NOW() - INTERVAL 7 DAY) AND NOW() group by d1 order by 2 desc"
+    querry="select d1,count(d1),round(avg(percentage)*100,2) from plant where uploaddate BETWEEN (NOW() - INTERVAL 7 DAY) AND NOW() group by d1 order by 2 desc;"
     mycursor.execute(querry)
     myresult=mycursor.fetchall()
     name=[]
     frequency=[]
+    percentage=[]
     
     for x in myresult:
-        print(x[0],x[1])
+        # print(x[0],x[1])
         name.append(x[0])
         frequency.append(x[1])
-    zipped=zip(name,frequency)
+        percentage.append(x[2])
+    zipped=zip(name,frequency,percentage)
     return render(request,"report.html",{'zipped':zipped})
