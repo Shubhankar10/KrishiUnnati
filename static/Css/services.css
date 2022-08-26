@@ -8,7 +8,7 @@
 .forum-container{
     height: 70vh;
     background-color: #DBD0BE;
-
+    position: relative;
 }
 
 .forum-fig{
@@ -77,12 +77,9 @@
     width: 600px;
     background-color: #644424;
     align-self: center;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
-  .tabs a{
-    color: white;
-  }
 
 .tabs{
     text-align: center;

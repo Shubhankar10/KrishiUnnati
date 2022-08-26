@@ -5,7 +5,7 @@
 }
 
 .others{
-    height: 300vh;
+    height: 280vh;
     background-color: var(--background);
 }
 
@@ -119,5 +119,5 @@
 }
 
 hr{
-    border-color: #035C41; 
+    border-color: #035C41;
 }

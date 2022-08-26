@@ -113,62 +113,75 @@
     list-style-type: circle ;
 }
 
-@media screen and (max-width: 896px) { 
-    .wrapper{
-        height: 130vh;
-        width: 100%;
-        background-color: var(--background);
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #plant-left {
+       align-items: center;
     }
+ }
 
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
 
-    #plant-left{
-        position: relative;
-        top: 10px;
-        width: 100%;
-        justify-content: start;
-        left: -3rem;
-    }
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
 
-    #plant-left p{
-        width: 300px;
-    }
-
-    .plant-ul{
-       left: 4rem;
-    }
-
-    .image-upload{
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1252.98px) { 
+    .container-fluid{
         height: 100vh;
+    }
+    #plant-left {
+        position: relative;
+        top:100px; 
+        /* background-color: #035C41; */
+    }
+
+    #plant-left h1{
+        font-size: 1.5rem;
+    }
+    #plant-left p{
+        font-size: 1rem;
+    }
+
+    .plant-right{
+        position: relative;
+        top:100px;
+        /* background-color: #035C41; */
     }
 
     .image-upload form{
-        position: static;
-        justify-content: flex-start;
-        height: 28rem;
+        position: relative;
+        height: 25rem;
+        width: 20rem;
+        left: 15rem;    
     }
 
     .upload-box{
-        height: 350px;
+        height: 300px;
+        width: 220px;
     }
-
-    .voice{
-        position: fixed;
-        left:75%;
-        
-    }
-
-    .voice .inside-container{
-        top: 65vh;
-        float: none;
-    }
-
-    .voice .inside-container button{
-        padding:10px 20px;
-        border-radius: 50%;
-    }
-
-    .voice .inside-container button i{
-        bottom: 0px;
+    .upload-button{
+        left: 7.5rem;
     }
  }
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+   
+    #plant-left {
+        /* background-color: #035C41; */
+        position: relative;
+        left: 100px;
+        font-size: 20px;
+    }
+
+    .plant-right{
+        position: relative;
+        right:100px;
+        font-size: 20px;
+    }
+}
 
