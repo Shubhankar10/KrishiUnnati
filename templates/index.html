@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'Css/Home.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Header.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Map.css' %}">
-    {% comment %} <link rel="stylesheet" href="{% static 'Css/navbar.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'Css/Navbar.css' %}">
     <link rel="stylesheet" href="{% static 'Css/Plant.css' %}">
     <link rel="stylesheet" href="{% static 'Css/other.css' %}">
     <link rel="stylesheet" href="{% static 'Css/services.css' %}">
@@ -44,7 +44,22 @@
     </div>
   </div>
 
-
+  <div class="translate-inner">
+    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+      <input name="next" type="hidden" value="{{ redirect_to }}">
+      <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+          {{ language.name_local }} ({{ language.code }})
+        </option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="{% trans 'Go' %}">
+    </form> 
+  </div>
   
 
   <div class="form-group">
@@ -118,25 +133,10 @@
 
         <div class="menu-link">
             <ul>  
-                <li><a href="/">{% trans "Map" %}</a></li>
+                <li><a href="/">{% trans "Home" %}</a></li>
                 <li><a href="/imgupload">{% trans "Plant Identification" %}</a></li>
                 <li><a href="/GovtScheme">{% trans "Government Schemes" %}</a></li>
-                <li><div class="translate-inner">
-                  <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                    <input name="next" type="hidden" value="{{ redirect_to }}">
-                    <select name="language">
-                      {% get_current_language as LANGUAGE_CODE %}
-                      {% get_available_languages as LANGUAGES %}
-                      {% get_language_info_list for LANGUAGES as languages %}
-                      {% for language in languages %}
-                      <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                        {{ language.name_local }} ({{ language.code }})
-                      </option>
-                      {% endfor %}
-                    </select>
-                    <input type="submit" value="{% trans 'Go' %}">
-                  </form> 
-                </div>
+                <li><a href="/map">{% trans "Map" %}</a>
                 </li>
             </ul>
         </div>
@@ -157,9 +157,25 @@
         {% endif %}
 
     </nav>
-    <div style="background-color:#FFF7EC;">
-      <hr class="hr-style">
+    <!-- Media Query Nav -->
+    <div class="topnav">
+      <a href="#home" class="active"><img src="{% static 'Images/newlogo.png' %}" alt="logo" style="height:80px; width:120px;"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="/home">Home</a>
+        <a href="/map">Map</a>
+        <a href="/imgupload">plant Identification</a>
+        <a href="/GovtScheme">Government Schemes</a>
+        <a href="/login_user">Login</a>
+        <a href="/register">SignUp</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars " style="position:relative; top:40px;"></i>
+      </a>
     </div>
+  <!-- Media Header end -->
+    
     
     <div class="main-home">
         <div class="text-container">
@@ -368,6 +384,17 @@
     
     function overlay_off() {
       document.getElementById("overlay").style.display = "none";
+    }
+
+    
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      
+      }
     }
     </script>
 

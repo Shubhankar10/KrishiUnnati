@@ -79,4 +79,13 @@ footer{
     position: relative;
     bottom: 400px;
   }
+
+  .f-about img{
+    position: relative;
+    left: 30px;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(2,1fr);
+  }
 }

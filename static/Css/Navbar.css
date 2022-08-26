@@ -196,3 +196,78 @@ body.active .wrapper .section .top_navbar .hamburger{
 }
 
 
+
+.topnav{
+  display: none;
+}
+
+@media screen and (max-width: 896px){
+
+  .main-nav{
+    display: none;
+  }
+  .main-nav .menu-link{
+    display: none;
+  }
+
+  .main-nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  
+  .main-nav .login-signup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: none;
+  }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(255, 239, 239);
+    position: relative;
+    display: block;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #DBD0C7;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #DBD0C7;
+  }
+  
+  .active {
+    background-color: #DBD0C7;
+    color: white;
+  }
+}
+
+
+  

@@ -70,15 +70,15 @@
     height: 50px;
 }
 
+
 @media screen and (max-width:896px) {
     .main-container-plant{
-    
-        height: 300px;
+        height: 350px;
     } 
 
     .right-container{
         position: relative;
-        top: 100px;
+        top: 150px;
         
         justify-content: flex-start;
     }
@@ -86,4 +86,18 @@
     .square-plant{
         display: none;
     }
+
+    footer{
+        position: relative;
+        top: 250;
+      }
+    
+      .f-about img{
+        position: relative;
+        left: 30px;
+      }
+    
+      .footer-container{
+        grid-template-columns: repeat(2,1fr);
+      }
 }
