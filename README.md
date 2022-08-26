@@ -14,7 +14,7 @@
 - [Problem Statement](#problem-statement)
 - [About the Project](#about-the-project)
 - [Top Features](#top-features)
-- [UI/UX Design](#ui/ux-design)
+- [UI/UX Design](#uiux-design)
 - [Built With](#built-with)
 - [Contributors](#contributors)
 
@@ -48,8 +48,8 @@ Through the web-app we provide online tele-consultation services as well as offl
 4. Multilingual- Website is available in English, Hindi and other regional languages. The users can easily switch the language of the entire website using the options in the homepage.
 
 ## UI/UX Design
-<img src="UI Design/Layout page.png" width="400">
-<img src="UI Design/" width="100">
+
+<img src="UI Design/Layout page.png" width="800">
 
 ## Built With
 
