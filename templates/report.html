@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/plantID.css' %} ">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Navbar.css' %} ">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/footer.css' %} ">
+    {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'Css/sidebar.css' %}">  {% endcomment %}
+    <title>Disease Report</title>
+    <style>  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="section">
+ <div class="top_navbar">
+   <div class="hamburger">
+     <a href="#">
+       <i class="fas fa-bars"></i>
+     </a>
+   </div>
+   <div>
+     <a href="{% url 'index' %}">
+      <img src="{% static 'Images/logo.png'%}" alt="" width="100px" height="50px" >
+     </a>
+   </div>
+   <div>
+     <img src="static/Images/Ellipse.png" alt="" width="50px" height="40px">
+   </div>
+ </div>
+ <div>
+   
+ </div>
+</div>
+     <div class="sidebar">
+       <div class="container">
+         <div class="sidebar">
+              <div class="background">
+                   <div class="logo">
+                        <img src="static/Images/logo.png" alt="logo">
+                   </div>
+              </div>
+              <div class="menu">
+                   <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/profile1">Profile</a></li>
+                        <li><a href="/imgupload">Plant ID</a></li>
+                        <li><a href="/weather">Weather Prediction</a></li>
+                        <li><a href="#">Government Scheme</a></li>
+                        <li><a href="/map">Map</a></li>
+                        <li><a href="#">Forum</a></li>
+                   </ul>
+              </div>
+              <div class="background1">
+                   <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Logout</a></li>
+                   </ul>
+              </div>
+       </div>
+   </div>
+ </div>
+<h2 style="text-align:center">Showing the last 7 days stats of Disease in Bengaluru </h2>
+ <table style="margin:auto auto; border:2px solid black;">
+    <tr style="text-align:center text-align:center border:2px solid black;">
+    <th style="padding:10px 10px; text-align:center; border:2px solid black;">Disease</th>
+    <th style="padding:10px 10px; text-align:center; border:2px solid black;"> Occurence </th>
+    <th style="padding:10px 10px; text-align:center; border:2px solid black;"> Avg %</th>
+    </tr>
+    
+    {% for i,j,k in zipped %}
+        
+    <tr style="text-align:center border:2px solid black;">
+        <td style="padding:10px 10px; text-align:center; border:2px solid black;">{{ i }} </td>
+        <td style="padding:10px 10px; text-align:center; border:2px solid black;">{{ j }} </td>
+        <td style="padding:10px 10px; text-align:center; border:2px solid black;"> {{ k }} </td>
+    </tr>
+
+    {% endfor %}
+    
+ </table>
+  <footer>
+    <div class="footer-container grid">
+      <div class="f-about">
+        <img src="{% static 'Images/WhiteLogo.png' %}" alt="">
+      </div>
+
+      <div class="f-links">
+         <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+           <li></span><a href="#">Contact Us</a></li>
+            <li><a href="#">SIH 2022</a></li>
+        </ul>
+      </div>
+
+       <div class="f-services"> 
+          <h3>Services</h3>
+        <ul>
+          <li><a href="/imgupload">Plant Identification</a></li>
+           <li><a href="#">Forum</a></li>
+            <li><a href="#">Voice Assistant</a></li>
+            <li><a href="#">Weather Prediction</a></li>
+            <li><a href="#">Database Analysis</a></li>
+            <li><a href="#">Govt Scheme</a></li>
+        </ul>
+      </div>
+
+      <div class="f-support">
+        <h3>Support</h3>
+      <ul>
+        <li><a href="#">Whatsapp Bot</a></li>
+         <li><a href="#">SMS Bot</a></li>
+          <li><a href="#">IVR </a></li>
+      </ul>
+    </div>
+
+    <div class="f-services"> 
+      <h3>Socials</h3>
+    <ul>
+      <li><a href="#">LinkedIn</a></li>
+       <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+
+    <div class="credit-container">
+      <div class="f-credits">
+        <hr>
+        <p>Team FARMbit</p>
+      </div>
+    </div>
+
+  </footer>
+
+<script src="https://kit.fontawesome.com/0e7ccbd866.js" crossorigin="anonymous"></script>
+<script src="{% static 'js/Sidebar.js'%}"></script>
+</html>
