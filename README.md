@@ -14,9 +14,9 @@
 - [Problem Statement](#problem-statement)
 - [About the Project](#about-the-project)
 - [Top Features](#top-features)
-- [UI/UX design](#ui/ux-design-)
-- [Built With](#built-with-)
-- [Contributors](#contributors-)
+- [UI/UX Design](#ui/ux-design)
+- [Built With](#built-with)
+- [Contributors](#contributors)
 
 ## Problem Statement
 
@@ -53,3 +53,25 @@ Through the web-app we provide online tele-consultation services as well as offl
 
 ## Built With
 
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green" height="30px">&nbsp;
+
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" height="30px">&nbsp;
+
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" height="30px">&nbsp;
+  
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="30px">&nbsp;
+  
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" height="30px">&nbsp;
+  
+  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" height="30px">&nbsp;
+
+
+
+## Contributors
+
+[Shubhankar Tiwary](https://www.linkedin.com/in/shubhankar10) <br>
+[Akshat Pandey](https://www.linkedin.com/in/akshat-pandey-001a53147) <br>
+[Shreoshi Saharoy](https://www.linkedin.com/in/shreoshi-saharoy) <br>
+[Disha Jain](https://www.linkedin.com/in/dishajain1224) <br>
+[Yash Sakre](https://www.linkedin.com/in/yash-sakre) <br>
+[Sanskar Dwivedi](https://www.linkedin.com/in/sanskar-dwivedi-a20201200) <br>
