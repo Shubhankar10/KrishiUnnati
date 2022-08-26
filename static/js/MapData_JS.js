@@ -110,11 +110,7 @@ var simplemaps_countrymap_mapdata={
     },
     "6": {
       name: "Chandigarh",
-<<<<<<< HEAD
       description: "Major Crops Grown: Wheat, Rice, Cotton, Sugarcane, Pearl Millet, Maize, Barley and Bajra. Major type of Soil found: Alluvial, Saline and Alkaline.",
-=======
-      description: "Major Crops Grown: ",
->>>>>>> refs/remotes/origin/main
       color: "default",
       hover_color: "default",
       url: "default"

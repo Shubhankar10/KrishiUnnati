@@ -35,6 +35,7 @@
     width: 400px;   
     color: var(--element);
     bottom: 90px;
+    text-align: start;
 }
 
 
@@ -58,12 +59,31 @@
 
 #plant-button{
 
-    padding: 8px 15px;
+    padding: 15px 25px;
     text-decoration: none;
-    color: white;
-    background-color: var(--element);
+    color: var(--element);
+    /* background-color: var(--element); */
+    border: 3px solid var(--element);
     border-radius: 4px;
     cursor: pointer;
     border: solid var(--element);
     height: 50px;
+}
+
+@media screen and (max-width:896px) {
+    .main-container-plant{
+    
+        height: 300px;
+    } 
+
+    .right-container{
+        position: relative;
+        top: 100px;
+        
+        justify-content: flex-start;
+    }
+
+    .square-plant{
+        display: none;
+    }
 }

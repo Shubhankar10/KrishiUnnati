@@ -20,14 +20,14 @@ li{
 
 .main-nav{
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     background-color: var(--background);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
 .logo img{
-    height: 6rem;
+    height: 8rem;
 }
 
 .menu-link{
@@ -36,7 +36,7 @@ li{
 
 
 .menu-link ul{
-    height: 6rem;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,7 +49,7 @@ li{
 
 .login-signup ul{
     grid-column: 3/4;
-    height: 6rem;
+    height: 8rem;
     display: grid;
     grid-template-columns: 2fr repeat(2, 1fr) 1rem;
     align-items: center;
@@ -78,7 +78,10 @@ li{
 }
 
 .hr-style{
-    width: 80%;
+    width: 65%;
+    height: 1px;
     margin: auto;
-    color: 1px solid var(--element);
+    color: solid var(--element);
+
 }
+

@@ -5,7 +5,7 @@
 }
 
 .translate-inner{
-    background: var(--element);
+    /* background: var(--element);   */
     padding: 10px;
     display: flex;
     justify-content: flex-end;

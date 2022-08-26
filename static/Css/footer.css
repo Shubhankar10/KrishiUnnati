@@ -73,3 +73,10 @@ footer{
     height: 1px;
     background-color: white;
 }
+
+@media screen and (max-width:896px) {
+  footer{
+    position: relative;
+    bottom: 400px;
+  }
+}

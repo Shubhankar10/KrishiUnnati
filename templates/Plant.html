@@ -51,17 +51,17 @@
    </div>
    <div>
      <a href="{% url 'index' %}">
-      <img src="{% static 'Images/logo.png'%}" alt="" width="100px" height="50px" >
+      <img id="homelogo" src="{% static 'Images/logo.png'%}" alt="" width="100px" height="50px" >
      </a>
    </div>
    <div>
      <img src="static/Images/Ellipse.png" alt="" width="50px" height="40px">
    </div>
  </div>
- <div>
-   
- </div>
 </div>
+
+
+
      <div class="sidebar">
        <div class="container">
          <div class="sidebar">
@@ -118,14 +118,14 @@
                 <div class="image-upload" style="position:relative; top:5rem;">
                     <form action="/imageprocess" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
-                        <label for="img" class="lbp"><i class="fas fa-cloud-upload-alt fa-5x upload-box" style="top:2rem;" onchange="getImage(this.value); ">
+                        <label for="img" class="lbp"><i id="upload" class="fas fa-cloud-upload-alt fa-5x upload-box" style="top:2rem;" onchange="getImage(this.value); ">
                           
                         </i></label>
                         <input id='img' type="file" name="image" style="display: none; visibility: none; " required/>
                         
                        <br/>
                         
-                        <input type="submit" value="submit" class=" upload-button" /> 
+                        <input id="submit-button" type="submit" value="submit" class=" upload-button" /> 
                     
                     </form>
                 </div>
@@ -201,5 +201,69 @@
  </script>
 <script src="https://kit.fontawesome.com/0e7ccbd866.js" crossorigin="anonymous"></script>
 <script src="{% static 'js/Sidebar.js'%}"></script>
+<script src="https://kit.fontawesome.com/0e7ccbd866.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/Sidebar.js'%}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-tooltip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-popover.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour.min.js"
+      integrity="sha512-kcDHM4gaMoZGaCaJ56XjGiknuwMeQFxssvIDnuuCp22PJYO8XvOeMibWtkdZTZtbPXfvLE9WweEVToVtM/wlMw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link href="../static/Css/bs5-intro-tour.css" rel="stylesheet" />
+    <script src="../static/js/bs5-intro-tour.js"></script>
+
+
+    <script>
+      $(document).ready(function () {
+        var steps = [
+          {
+            title: "Plant Identification",
+            content: "<p>Diagnose your plant</p>"
+          }, {
+            id: "upload",
+            content: "<p>Step 1.Click here to upload image</p>"
+          },{
+            id: "submit-button",
+            content: "<p>Step 2.Submit here</p>"
+          }, {
+            id: "homelogo",
+            content: "<p>Click here to go back to home</p>"
+          }, 
+        ];
+
+        var tour = new Tour(steps);
+
+        tour.show();
+
+        // var tour = new Tour({
+        //   steps: [
+        //     {
+        //       element: "#plant",
+        //       title: "tour",
+        //       content: "click here to start your tour",
+        //       container: 'body',
+        //     },
+        //     {
+        //       element: "#upload",
+        //       title: "1st Panel",
+        //       content: "This is the second panel",
+        //     },
+        //   ]
+        // });
+
+        // // tour.init();
+        // // tour.start();
+        // tour.init();
+        // // tour.start();
+        // $("#startTourBtn").click(function () {
+        //   tour.restart();
+        // });
+
+
+
+      });
+    </script>
 </body>
 </html> 

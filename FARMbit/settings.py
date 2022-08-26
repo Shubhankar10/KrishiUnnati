@@ -165,7 +165,9 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+ALLOWED_HOSTS = ['5cd4-14-98-233-17.in.ngrok.io','127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://5cd4-14-98-233-17.in.ngrok.io']
 
 
 #User Model

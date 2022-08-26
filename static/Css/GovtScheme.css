@@ -1,0 +1,33 @@
+*{
+    background-color: #FFF7EC ;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7EC;
+}
+
+h2{
+    color: black;
+}
+
+.bg{
+    background-color: #06805B;
+}
+
+.textbg{
+    background-color: #06805B;
+}
+
+.linebreak{
+    padding-bottom: 5vh;
+
+}
+
+a{
+    text-decoration: none;
+    
+    background-color: #06805B;
+}

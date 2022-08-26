@@ -30,8 +30,10 @@
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    top:10rem;
 }
 
 .main-home .text-container h1{
@@ -121,9 +123,13 @@
     padding: 8px 15px;
     padding-right: 4rem;
     text-decoration: none;
-    color: white;
-    background-color: var(--element);
-    border-radius: 4px;
+    color: var(--element);
+    /* background-color: var(--element);
+     */
+    border: 4px solid var(--element);
+    border-radius: 10px;
+    width: 150px;
+    font-size: 1rem;
 }
 
 .side-img{      
@@ -136,8 +142,9 @@
     color: var(--element);
     border: 3px solid var(--element);
     border-radius: 4px;
+    width: 150px;
 }
-
+/* 
 #plant-button{
     padding: 8px 15px;
     text-decoration: none;
@@ -147,5 +154,56 @@
     cursor: pointer;
     border: solid var(--element);
     height: 50px;
-}
+} */
 
+@media screen and (max-width:896px) {
+    .main-home{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container{
+        display: block;
+        position: relative;
+        top: 50px;
+    }
+
+    .text-container h1{
+        right: 0px !important;
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+
+    .text-container p{
+        text-align: center;
+        font-size: 1.8rem !important;
+    }
+
+    .home-button{
+        top:40px;
+    }
+
+    .home-button .button1{
+        position: relative;
+        right: 0px;
+        text-align: center;
+    }
+
+    .side-img{
+        position: relative;
+        top: 100px;
+        height: 400px;
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #plant-button{
+        position: relative;
+        bottom:70px;
+    }
+
+    
+}

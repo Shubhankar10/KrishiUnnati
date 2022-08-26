@@ -29,7 +29,7 @@
 .map-text-container h1{
     font-weight: 800;
     font-size: 50px;
-    color: white;
+    color: black;
 }
 
 
@@ -52,4 +52,38 @@
 .map-image{
     width:850px;
     height:600px;
+}
+
+@media screen and (max-width:896px){
+    .map-main{
+        height: 60vh;
+    }
+
+
+    .main-container-map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 10vh;
+    }
+
+    .map-text-container h1{
+        font-size: 1.8rem;
+    }
+
+    .map-text-container p{
+        width: 340px;
+    }
+
+    .map-container{
+        top: 50px;
+
+    }
+    
+    .map-image{
+        width: 350px;
+        height: 380px;
+    }
+
+
 }
