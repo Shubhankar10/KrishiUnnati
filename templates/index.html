@@ -28,7 +28,6 @@
 <body>
 
 
-{% comment %} Yash ka push comment {% endcomment %}
   <div id="overlay" onclick="overlay_off()">
     <div class="overlayBox">
         <div id="text">{% trans "Speak Now" %}</div>
@@ -58,8 +57,7 @@
             {% endfor %}
         </div>
 
-   <!-- chat-->
-   {% comment %} <div class="chat-bar-collapsible">
+ <div class="chat-bar-collapsible">
     <button id="chat-button" type="button" class="collapsible">{% trans "Chat with us!" %}
         <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
     </button> 
@@ -112,7 +110,7 @@
   </div>
 
 </div>
-</div> {% endcomment %}
+</div>
     <nav class="main-nav">
         <div class="logo">
             <a href="/"><img src="{% static 'Images/newlogo.png' %}" alt="logo" /></a>
@@ -138,12 +136,12 @@
                     </select>
                     <input type="submit" value="{% trans 'Go' %}">
                   </form> 
-                </div></a></li>
+                </div>
+                </li>
             </ul>
         </div>
         
-        {#
-           Login/Signup btn when user in not authenticated and profile btn when he is #}
+        {#Login/Signup btn when user in not authenticated and profile btn when he is #}
         {% if user.is_authenticated %}
         <div class="login-signup">
           <img src="{% static 'Images/ProfileImage.png' %}" alt="profile-img" class="profile-img"

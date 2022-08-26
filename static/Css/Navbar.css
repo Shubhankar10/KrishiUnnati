@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: #f4ffe1;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #058760;
+  border-radius: 200px;
+}
 :root{
   --element: #035C41;
   --background: #FFF7EC;
@@ -35,6 +47,8 @@ body{
   margin-top: -30px;
   position: absolute;
   border-radius: 0 0 10px 10px;
+  border-bottom: #A86100;
+  border-bottom-width: 2px;
 }
 .container .sidebar .logo{
   margin-bottom: 30px;
@@ -65,6 +79,7 @@ body{
   color: rgb(0, 0, 0);
   font-size: 16px;
   position: relative;
+  font-weight: 600;
 }
 
 .menu ul li a .icon{
@@ -132,11 +147,11 @@ body{
   /* width: calc(100% - 225px);
   margin-left: 200px; */
   transition: all 0.5s ease;
-  
+
 }
 
 .wrapper .section .top_navbar{
-  
+
   background-color: var(--background);
   height: 50px;
   display: flex;
@@ -173,3 +188,11 @@ body.active .wrapper .sidebar{
 body.active .wrapper .section .top_navbar .hamburger{
   left: 200px;
 }
+
+@media screen and (max-width: 896px){
+  .menu-link ul li{
+    display: none;
+  }
+}
+
+

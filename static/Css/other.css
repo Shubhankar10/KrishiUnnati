@@ -55,8 +55,6 @@
     background-color:var(--element);
 }
 
-
-
 .weather-fig{
     position: relative;
     top: 600px;
@@ -117,10 +115,15 @@
     width: 400px;
     font-size: 1.5rem;
 }
-
 hr{
     border-color: #035C41; 
 }
+
+.services-container h1{
+    top: 30px;
+}
+
+
 
 @media screen and (max-width:896px) {
    

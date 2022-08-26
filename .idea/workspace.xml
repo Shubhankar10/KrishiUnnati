@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="debf8a59-0328-45b4-ad50-a49d03bb46bc" name="Changes" comment="Now Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/KrishiUnnati.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KrishiUnnati.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/other.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/other.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/weather.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/weather.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,13 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projects/PyNew/Final/CSS/KrishiUnnati"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="KrishiUnnati" type="Python.DjangoServer" factoryName="Django server">
       <module name="KrishiUnnati" />
@@ -64,6 +71,7 @@
       <updated>1661428087603</updated>
       <workItem from="1661428094287" duration="2552000" />
       <workItem from="1661445832672" duration="1440000" />
+      <workItem from="1661499469246" duration="2633000" />
     </task>
     <task id="LOCAL-00001" summary="Now Commit">
       <created>1661430147497</created>

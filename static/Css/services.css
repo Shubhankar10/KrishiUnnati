@@ -23,7 +23,7 @@
 .forum-fig-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -34,7 +34,7 @@
     text-decoration: underline;
     line-height: -4rem;
     font-size: 3rem;
-    
+
 }
 
 .forum-fig-left h2{
@@ -43,7 +43,7 @@
     line-height: -4rem;
     font-size: 2rem;
     left: 2rem;
-    
+
 }
 
 .forum-fig-left p{
@@ -60,17 +60,17 @@
     justify-content: flex-start;
     position: relative;
     top: 10px;
-    
+
 }
- 
+
 .forum-fig-right .forum-fig-sections{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     align-self: center;
-    
+
 }
-/* .rectangle {
+.rectangle {
     position: relative;
     top: 1rem;
     height: 170px;
@@ -78,7 +78,7 @@
     background-color: #644424;
     align-self: center;
     border-radius: 20px;
-  } */
+  }
 
   .tabs a{
     color: white;
@@ -87,12 +87,12 @@
 .tabs{
     text-align: center;
     font-size: 1.5rem;
-    padding: 10px 20px 10px 20px;; 
+    padding: 10px 20px 10px 20px;;
     background-color: #A77D53;
     border-radius: 10px;
     color: white;
 }
-    
+
 .services-container{
     height: 50vh;
     background-color: var(--background);
@@ -128,7 +128,6 @@
 .services-container h1{
     font-size: 3rem;
 }
-
 @media screen and (max-width:896px) {
     .forum-container{
         position: relative;

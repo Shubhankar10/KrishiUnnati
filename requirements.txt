@@ -4,3 +4,6 @@ rosetta
 scipy
 pandas
 nltk
+mysql
+torch
+mysql-connector
